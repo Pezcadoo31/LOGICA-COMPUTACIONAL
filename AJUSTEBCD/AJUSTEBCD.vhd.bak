@@ -1,0 +1,29 @@
+--
+--ABDIEL VICENCIO ANTONIO 
+
+Library IEE;
+Use IEEE.std_logic_1164.all;
+
+Entity AJUSTEBCD is
+	port (Cin : in std_logic;
+			Z : in std_logic_vector (3 downto 0);
+			Cout : out std_logic;
+			Suma : out std_logic_vector (3 downto 0));
+end entity ;
+
+architecture arc of AJUSTEBCD is 
+
+component ha is
+	
+	port ( a, b : in std_logic;
+			s, Cout : out std_logic);
+	end component ha;
+	
+component fa is
+	
+	port ( a, b, Cin : in std_logic;
+			s, Cout : out std_logic);
+	end component fa;
+		
+begin 
+	I0 : ha port map ();

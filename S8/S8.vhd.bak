@@ -1,0 +1,6 @@
+
+Library IEEE;
+use IEEE.std_logic_1164.all;
+
+Entity S8 is 
+	port ()

@@ -1,0 +1,16 @@
+
+-- ABDIEL VICENCIO ANTONIO 
+
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+
+Entity MAS1_24BITS IS
+	PORT (	A : IN std_logic_vector (23 downto 0);
+				OV : out std_logic;
+				Z : out std_logic_vector(23 downto 0));
+end entity;
+
+architecture arc of MAS1_24BITS IS
+
+Component HA IS 
+	PORT 

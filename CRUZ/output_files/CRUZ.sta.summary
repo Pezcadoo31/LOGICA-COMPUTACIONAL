@@ -1,0 +1,161 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : -2.841
+TNS   : -29.586
+
+Type  : Slow 1200mV 85C Model Setup 'CONTADOR_800:CNT800|OV'
+Slack : -1.156
+TNS   : -6.442
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -0.830
+TNS   : -0.830
+
+Type  : Slow 1200mV 85C Model Hold 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CONTADOR_800:CNT800|OV'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.730
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CONTADOR_800:CNT800|OV'
+Slack : -2.029
+TNS   : -19.502
+
+Type  : Slow 1200mV 85C Model Recovery 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : -1.809
+TNS   : -18.882
+
+Type  : Slow 1200mV 85C Model Removal 'CONTADOR_800:CNT800|OV'
+Slack : 1.783
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : 1.797
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CONTADOR_800:CNT800|OV'
+Slack : -1.403
+TNS   : -14.030
+
+Type  : Slow 1200mV 0C Model Setup 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : -2.532
+TNS   : -25.563
+
+Type  : Slow 1200mV 0C Model Setup 'CONTADOR_800:CNT800|OV'
+Slack : -0.952
+TNS   : -5.080
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -0.705
+TNS   : -0.705
+
+Type  : Slow 1200mV 0C Model Hold 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CONTADOR_800:CNT800|OV'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.645
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CONTADOR_800:CNT800|OV'
+Slack : -1.813
+TNS   : -17.362
+
+Type  : Slow 1200mV 0C Model Recovery 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : -1.569
+TNS   : -16.368
+
+Type  : Slow 1200mV 0C Model Removal 'CONTADOR_800:CNT800|OV'
+Slack : 1.652
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : 1.668
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CONTADOR_800:CNT800|OV'
+Slack : -1.403
+TNS   : -14.030
+
+Type  : Fast 1200mV 0C Model Setup 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : -1.007
+TNS   : -5.131
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -0.080
+TNS   : -0.080
+
+Type  : Fast 1200mV 0C Model Setup 'CONTADOR_800:CNT800|OV'
+Slack : 0.067
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CONTADOR_800:CNT800|OV'
+Slack : 0.150
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.288
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'CONTADOR_800:CNT800|OV'
+Slack : -0.290
+TNS   : -2.580
+
+Type  : Fast 1200mV 0C Model Recovery 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : -0.211
+TNS   : -1.853
+
+Type  : Fast 1200mV 0C Model Removal 'CONTADOR_800:CNT800|OV'
+Slack : 0.734
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : 0.741
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -4.012
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DIVISOR_FRECUENCIA:D0|Q'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CONTADOR_800:CNT800|OV'
+Slack : -1.000
+TNS   : -10.000
+
+------------------------------------------------------------

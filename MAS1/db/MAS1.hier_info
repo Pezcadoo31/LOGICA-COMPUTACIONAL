@@ -1,0 +1,49 @@
+|MAS1
+A[0] => HA:I0.a
+A[1] => HA:I1.a
+A[2] => HA:I2.a
+A[3] => HA:I3.a
+A[4] => Z.IN1
+Z[0] <= HA:I0.s
+Z[1] <= HA:I1.s
+Z[2] <= HA:I2.s
+Z[3] <= HA:I3.s
+Z[4] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MAS1|ha:I0
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MAS1|ha:I1
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MAS1|ha:I2
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MAS1|ha:I3
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_800/simulation/qsim
+Ehard_block
+Z1 w1709766840
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
+R0
+Z8 8MAS1_800.vho
+Z9 FMAS1_800.vho
+l0
+L34
+V8_BbEmGd;OHS6h@;gFc7W3
+!s100 ROH=D<N4CT6aCZ<37A[_?0
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1709766841
+!i10b 1
+Z12 !s108 1709766841.000000
+Z13 !s90 -work|work|MAS1_800.vho|
+Z14 !s107 MAS1_800.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
+l75
+L53
+Vg=W`CQ>24lhYF71zFSkY43
+!s100 zW6ML5NVY?Ai`]`n2XhME3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Emas1_800
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L88
+V6iOfOMaI>;c2N<VR^<^Fd2
+!s100 GCSg@>l@D@9e^Z5MH3Mi`3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 mas1_800 0 22 6iOfOMaI>;c2N<VR^<^Fd2
+l181
+L120
+Veh:K>dCD4:SYij5<Si:Mm2
+!s100 <2?lG<6@g=8f3c^Lme>823
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Emas1_800_vhd_vec_tst
+Z17 w1709766839
+R5
+R6
+R0
+Z18 8MAS1_800.vwf.vht
+Z19 FMAS1_800.vwf.vht
+l0
+L31
+V[JAjP0cXWOaBdCjFnTD1Y2
+!s100 iJY]TG844MKJ;kmT3BPd83
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|MAS1_800.vwf.vht|
+Z21 !s107 MAS1_800.vwf.vht|
+!i113 1
+R15
+R16
+Amas1_800_arch
+R5
+R6
+Z22 DEx4 work 20 mas1_800_vhd_vec_tst 0 22 [JAjP0cXWOaBdCjFnTD1Y2
+l46
+L33
+VF3OPO`FZ81Tm5]FCmO77S3
+!s100 zNKSzVAD:mJN75PE2b>bJ3
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16

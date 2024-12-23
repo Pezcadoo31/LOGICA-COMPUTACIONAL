@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/abdyv/OneDrive/Documentos/QUARTUS/HammingS1/simulation/qsim
+vHammingS1
+Z1 !s110 1699574155
+!i10b 1
+!s100 FjN7BhHQ[`HYjSQZS[J>R2
+I[nYS]IXif60:;GG_1`[=P3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1699574155
+Z4 8HammingS1.vo
+Z5 FHammingS1.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1699574155.000000
+Z8 !s107 HammingS1.vo|
+Z9 !s90 -work|work|HammingS1.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@hamming@s1
+vHammingS1_vlg_vec_tst
+R1
+!i10b 1
+!s100 W>SYjXi6Hf4MUXB4VXADA0
+I=DTzlg8MGj]aSY^JUY1lV0
+R2
+R0
+w1699574154
+8HammingS1.vwf.vt
+FHammingS1.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 HammingS1.vwf.vt|
+!s90 -work|work|HammingS1.vwf.vt|
+!i113 1
+R10
+R11
+n@hamming@s1_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 OmJz8G1oR?iVEoaQ_l@C82
+IC8f?[oeAo^?ZFeBga2JL43
+R2
+R0
+R3
+R4
+R5
+L0 219
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

@@ -1,0 +1,22 @@
+
+-- ABDIEL VICENCIO ANTONIO 
+
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+
+Entity CONTADOR_800 is
+	port (	CLK, RST : IN std_logic;
+				CNT : out std_logic_vector (9 downto 0);
+				OV : out std_logic);
+end entity;
+
+architecture arc of CONTADOR_800 is
+
+component MAS1_800 IS
+	port ( A : in std_logic_vector (9 downto 0);
+           OV : out std_logic;
+           Z : out std_logic_vector(9 downto 0));
+end component;
+
+begin
+

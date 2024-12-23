@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/DIVISOR_FRECUENCIA/DIVISOR_FRECUENCIA.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/DIVISOR_FRECUENCIA/db/DIVISOR_FRECUENCIA.cbx.xml
+design_name = hard_block
+design_name = DIVISOR_FRECUENCIA
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, DIVISOR_FRECUENCIA, 1
+instance = comp, \CLKout~output\, CLKout~output, DIVISOR_FRECUENCIA, 1
+instance = comp, \CLK~input\, CLK~input, DIVISOR_FRECUENCIA, 1
+instance = comp, \Q~0\, Q~0, DIVISOR_FRECUENCIA, 1
+instance = comp, \RST~input\, RST~input, DIVISOR_FRECUENCIA, 1
+instance = comp, \~QUARTUS_CREATED_UNVM~\, ~QUARTUS_CREATED_UNVM~, DIVISOR_FRECUENCIA, 1
+instance = comp, \~QUARTUS_CREATED_ADC1~\, ~QUARTUS_CREATED_ADC1~, DIVISOR_FRECUENCIA, 1

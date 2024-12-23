@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/abdyv/OneDrive/Documentos/QUARTUS/ContadorMod19T/simulation/qsim
+vContadorMod19T
+Z1 !s110 1700110534
+!i10b 1
+!s100 mi]ZRBJcMM>oBPS6m4nhN1
+IZ<gF^VXBXDJaBmCKKO9CS0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1700110533
+Z4 8ContadorMod19T.vo
+Z5 FContadorMod19T.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1700110533.000000
+Z8 !s107 ContadorMod19T.vo|
+Z9 !s90 -work|work|ContadorMod19T.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@contador@mod19@t
+vContadorMod19T_vlg_vec_tst
+R1
+!i10b 1
+!s100 IT:R>[2iSS:cnamYSmdgS1
+Id2]gVoh586J[KeYEaQ>kd0
+R2
+R0
+w1700110532
+8ContadorMod19T.vwf.vt
+FContadorMod19T.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+!s108 1700110534.000000
+!s107 ContadorMod19T.vwf.vt|
+!s90 -work|work|ContadorMod19T.vwf.vt|
+!i113 1
+R10
+R11
+n@contador@mod19@t_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 g=T0bMiAMETB<5C5:Q@L_1
+Ia@0m^_`>kh0iSe?eQ]9bz2
+R2
+R0
+R3
+R4
+R5
+L0 536
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

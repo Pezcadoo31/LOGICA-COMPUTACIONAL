@@ -1,0 +1,15 @@
+-- INCREMENTO DE 1 BIT 
+-- ABDIEL VICENCIO ANTONIO 
+
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+
+Entity MAS1 is 
+	port (	A : IN std_logic_vector (4 downto 0);
+				Z : out std_logic_vector(4 downto 0));
+end MAS1;
+
+architecture arc of MAS1 IS 
+
+component HA IS
+	PORT (); 

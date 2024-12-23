@@ -1,0 +1,459 @@
+Analysis & Synthesis report for HOLA
+Tue Mar 05 14:05:52 2024
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |HOLA|EDO_Y
+  9. State Machine - |HOLA|EDO
+ 10. User-Specified and Inferred Latches
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Mar 05 14:05:52 2024       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; HOLA                                        ;
+; Top-level Entity Name              ; HOLA                                        ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 85                                          ;
+;     Total combinational functions  ; 84                                          ;
+;     Dedicated logic registers      ; 39                                          ;
+; Total registers                    ; 39                                          ;
+; Total pins                         ; 32                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M08DAF484C8G     ;                    ;
+; Top-level entity name                                            ; HOLA               ; HOLA               ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+; HOLA.vhd                         ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 85       ;
+;                                             ;          ;
+; Total combinational functions               ; 84       ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 14       ;
+;     -- 3 input functions                    ; 44       ;
+;     -- <=2 input functions                  ; 26       ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 84       ;
+;     -- arithmetic mode                      ; 0        ;
+;                                             ;          ;
+; Total registers                             ; 39       ;
+;     -- Dedicated logic registers            ; 39       ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 32       ;
+;                                             ;          ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; Equal0~4 ;
+; Maximum fan-out                             ; 39       ;
+; Total fan-out                               ; 438      ;
+; Average fan-out                             ; 2.34     ;
++---------------------------------------------+----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; |HOLA                      ; 84 (84)             ; 39 (39)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 32   ; 0            ; 0          ; |HOLA               ; HOLA        ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |HOLA|EDO_Y                                                                                                                                                                                                                             ;
++--------------+--------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+------------+
+; Name         ; EDO_Y.ESPERA ; EDO_Y.C18 ; EDO_Y.C17 ; EDO_Y.C16 ; EDO_Y.C15 ; EDO_Y.C14 ; EDO_Y.C13 ; EDO_Y.C12 ; EDO_Y.C11 ; EDO_Y.C10 ; EDO_Y.C9 ; EDO_Y.C8 ; EDO_Y.C7 ; EDO_Y.C6 ; EDO_Y.C5 ; EDO_Y.C4 ; EDO_Y.C3 ; EDO_Y.C2 ; EDO_Y.C1 ; EDO_Y.IDLE ;
++--------------+--------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+------------+
+; EDO_Y.IDLE   ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0          ;
+; EDO_Y.C1     ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 1          ;
+; EDO_Y.C2     ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 1          ;
+; EDO_Y.C3     ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 1          ;
+; EDO_Y.C4     ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.C5     ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.C6     ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.C7     ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.C8     ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.C9     ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.C10    ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.C11    ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.C12    ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.C13    ; 0            ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.C14    ; 0            ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.C15    ; 0            ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.C16    ; 0            ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.C17    ; 0            ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.C18    ; 0            ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1          ;
+; EDO_Y.ESPERA ; 1            ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1          ;
++--------------+--------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |HOLA|EDO                                                                                                                                                                                     ;
++------------+------------+---------+---------+---------+---------+---------+---------+---------+---------+---------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------+
+; Name       ; EDO.ESPERA ; EDO.C18 ; EDO.C17 ; EDO.C16 ; EDO.C15 ; EDO.C14 ; EDO.C13 ; EDO.C12 ; EDO.C11 ; EDO.C10 ; EDO.C9 ; EDO.C8 ; EDO.C7 ; EDO.C6 ; EDO.C5 ; EDO.C4 ; EDO.C3 ; EDO.C2 ; EDO.C1 ; EDO.IDLE ;
++------------+------------+---------+---------+---------+---------+---------+---------+---------+---------+---------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------+
+; EDO.IDLE   ; 0          ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0        ;
+; EDO.C1     ; 0          ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 1        ;
+; EDO.C2     ; 0          ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 1        ;
+; EDO.C3     ; 0          ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 1        ;
+; EDO.C4     ; 0          ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.C5     ; 0          ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.C6     ; 0          ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.C7     ; 0          ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.C8     ; 0          ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.C9     ; 0          ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.C10    ; 0          ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.C11    ; 0          ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.C12    ; 0          ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.C13    ; 0          ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.C14    ; 0          ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.C15    ; 0          ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.C16    ; 0          ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.C17    ; 0          ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.C18    ; 0          ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1        ;
+; EDO.ESPERA ; 1          ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1        ;
++------------+------------+---------+---------+---------+---------+---------+---------+---------+---------+---------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------+
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; EDO_F.IDLE_769                                      ; Selector57          ; yes                    ;
+; EDO_F.C1_760                                        ; Selector57          ; yes                    ;
+; EDO_F.C2_751                                        ; Selector57          ; yes                    ;
+; EDO_F.C3_742                                        ; Selector57          ; yes                    ;
+; EDO_F.C4_733                                        ; Selector57          ; yes                    ;
+; EDO_F.C5_724                                        ; Selector57          ; yes                    ;
+; EDO_F.C6_715                                        ; Selector57          ; yes                    ;
+; EDO_F.C7_706                                        ; Selector57          ; yes                    ;
+; EDO_F.C13_652                                       ; Selector57          ; yes                    ;
+; EDO_F.ESPERA_598                                    ; Selector57          ; yes                    ;
+; EDO_F.C9_688                                        ; Selector57          ; yes                    ;
+; EDO_F.C11_670                                       ; Selector57          ; yes                    ;
+; EDO_F.C12_661                                       ; Selector57          ; yes                    ;
+; EDO_F.C14_643                                       ; Selector57          ; yes                    ;
+; EDO_F.C16_625                                       ; Selector57          ; yes                    ;
+; EDO_F.C18_607                                       ; Selector57          ; yes                    ;
+; EDO_F.C15_634                                       ; Selector57          ; yes                    ;
+; EDO_F.C17_616                                       ; Selector57          ; yes                    ;
+; EDO_F.C10_679                                       ; Selector57          ; yes                    ;
+; EDO_F.C8_697                                        ; Selector57          ; yes                    ;
+; EDO_X.C1_940                                        ; Selector23          ; yes                    ;
+; EDO_X.C2_931                                        ; Selector57          ; yes                    ;
+; EDO_X.C3_922                                        ; Selector57          ; yes                    ;
+; EDO_X.C4_913                                        ; Selector57          ; yes                    ;
+; EDO_X.C5_904                                        ; Selector57          ; yes                    ;
+; EDO_X.C6_895                                        ; Selector57          ; yes                    ;
+; EDO_X.C7_886                                        ; Selector57          ; yes                    ;
+; EDO_X.C13_832                                       ; Selector57          ; yes                    ;
+; EDO_X.C9_868                                        ; Selector57          ; yes                    ;
+; EDO_X.C11_850                                       ; Selector57          ; yes                    ;
+; EDO_X.C12_841                                       ; Selector57          ; yes                    ;
+; EDO_X.C14_823                                       ; Selector57          ; yes                    ;
+; EDO_X.C16_805                                       ; Selector57          ; yes                    ;
+; EDO_X.C18_787                                       ; Selector57          ; yes                    ;
+; EDO_X.C15_814                                       ; Selector57          ; yes                    ;
+; EDO_X.C17_796                                       ; Selector57          ; yes                    ;
+; EDO_X.C10_859                                       ; Selector57          ; yes                    ;
+; EDO_X.C8_877                                        ; Selector57          ; yes                    ;
+; Number of user-specified and inferred latches = 38  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; EDO_Y.ESPERA                          ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 39    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 39    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 39    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 32                          ;
+; cycloneiii_ff         ; 39                          ;
+;     ENA CLR           ; 39                          ;
+; cycloneiii_lcell_comb ; 88                          ;
+;     normal            ; 88                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 25                          ;
+;         3 data inputs ; 44                          ;
+;         4 data inputs ; 14                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 1.90                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Tue Mar 05 14:05:39 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off HOLA -c HOLA
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file hola.vhd
+    Info (12022): Found design unit 1: HOLA-arc File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 16
+    Info (12023): Found entity 1: HOLA File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 8
+Info (12127): Elaborating entity "HOLA" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at HOLA.vhd(25): signal "RST" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at HOLA.vhd(40): signal "START" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at HOLA.vhd(118): signal "EDO_Y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 118
+Warning (10631): VHDL Process Statement warning at HOLA.vhd(36): inferring latch(es) for signal or variable "EDO_X", which holds its previous value in one or more paths through the process File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Warning (10631): VHDL Process Statement warning at HOLA.vhd(36): inferring latch(es) for signal or variable "EDO_F", which holds its previous value in one or more paths through the process File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.ESPERA" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C18" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C17" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C16" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C15" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C14" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C13" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C12" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C11" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C10" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C9" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C8" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C7" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C6" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C5" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C4" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C3" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C2" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.C1" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_F.IDLE" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.ESPERA" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C18" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C17" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C16" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C15" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C14" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C13" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C12" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C11" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C10" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C9" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C8" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C7" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C6" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C5" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C4" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C3" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C2" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.C1" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Info (10041): Inferred latch for "EDO_X.IDLE" at HOLA.vhd(36) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+Warning (13012): Latch EDO_X.C1_940 has unsafe behavior File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 36
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal EDO.IDLE File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 19
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "RW" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HOLA/HOLA.vhd Line: 12
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 154 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 13 output pins
+    Info (21061): Implemented 122 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4804 megabytes
+    Info: Processing ended: Tue Mar 05 14:05:52 2024
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:07
+
+

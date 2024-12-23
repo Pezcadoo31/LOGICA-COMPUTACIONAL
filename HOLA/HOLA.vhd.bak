@@ -1,0 +1,131 @@
+
+-- ABDIEL VICENCIO ANTONIO 
+
+Library IEEE;
+Use IEEE.std_logic_1164. all;
+
+--Entity HOLA is 
+--	port ();
+
+type ESTADOS is (IDLE, Cl, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, ESPERA);
+signal EDO, EDO_F, EDO_X, EDO_Y : ESTADOS;
+
+Begin 
+
+P1: process (CLK, ENA_LCD) is
+	begin
+		if (RST = '0') then -- RST asíncrono en bajo
+			EDO <= IDLE:
+			EDO_Y <= IDLE:
+		elsif (CLK'event and CLK = '1') then
+			if (ENA_LCD = '1') then
+				EDO <= EDO_F.
+				EDO_Y <= EDO_X;
+			end if
+		end if
+end process Pl;
+
+P2: process (CLK, EDO) is
+	begin
+		case D0 is
+			when IDLE =>
+				EDO_X <= Cl;
+				EDO_F <= ESPERA;
+			when Cl =>
+				EDO_X <= C2;
+				EDO_F <= ESPERA;
+			when C2 =>
+				EDO_X <= C3;
+				EDO_F <=ESPERA;
+			when C3 =>
+				EDO_X <= C4;
+				EDO_F <= ESPERA;
+			when C4 =>
+				EDO_X <= CS:
+				EDO_F <= ESPERA;
+			when C5 =>
+				EDO_X <= C6;
+				EDO_F <= ESPERA;
+			when C6 =>
+				EDO_X <= C7;
+				EDO_F <= ESPERA;
+			when C7 =>
+				EDO_X <= C8;
+				EDO_F <= ESPERA;
+			when C8 =>
+				EDO_X <= C9;
+				EDO_F <= ESPERA;
+			when C9 =>
+				EDO_X <= C10;
+				EDO_F <= ESPERA;
+			when C10 =>
+				EDO_X <= C11;
+				EDO_F <= ESPERA;
+			when C12 =>
+				EDO_X <= C13;
+				EDO_F <= ESPERA;
+			when C13 =>
+				EDO_X <= C14;
+				EDO_F <= ESPERA;
+			when C14 =>
+				EDO_X <= C15;
+				EDO_F <= ESPERA;
+			when C15 =>
+				EDO_X <= C16;
+				EDO_F <= ESPERA;
+			when C16 =>
+				EDO_X <= C17;
+				EDO_F <= ESPERA;
+			when C17 =>
+				EDO_X <= C18;
+				EDO_F <= ESPERA;
+			when ESPERA =>
+			WHEN OTHERS => NULL;
+		END CASE;
+END PROCESS;
+
+P3: process (EDO) is 
+	begin
+		case EDO is
+			when IDLE => 	RS <= '0';
+								RW <= '0';
+								E <= '0';
+								DATA <= X"00";
+								LCD_BLON <= '0';
+								LCD_ON <= '0';
+			when C1 => 		RS <= '0';
+								RW <= '0';
+								E <= '1';
+								DATA <= X"38";
+								LCD_BLON <= '1';
+								LCD_ON <= '1';
+			when C2 => 		RS <= '0';
+								RW <= '0';
+								E <= '1';
+								DATA <= X"38";
+								LCD_BLON <= '1';
+								LCD_ON <= '1';
+			when C3 => 		RS <= '0';
+								RW <= '0';
+								E <= '1';
+								DATA <= X"38";
+								LCD_BLON <= '1';
+								LCD_ON <= '1';
+			when C4 => 		RS <= '0';
+								RW <= '0';
+								E <= '1';
+								DATA <= X"0D";
+								LCD_BLON <= '1';
+								LCD_ON <= '1';
+			when C5 => 		RS <= '0';
+								RW <= '0';
+								E <= '1';
+								DATA <= X"06";
+								LCD_BLON <= '1';
+								LCD_ON <= '1';
+			when C6 => 		RS <= '0';
+								RW <= '0';
+								E <= '1';
+								DATA <= X"01";
+								LCD_BLON <= '1';
+								LCD_ON <= '1';

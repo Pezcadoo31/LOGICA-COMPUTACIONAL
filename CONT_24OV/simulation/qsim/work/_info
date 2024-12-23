@@ -1,0 +1,147 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/CONT_24OV/simulation/qsim
+Econt_24ov
+Z1 w1716951729
+Z2 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
+Z3 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
+Z10 dC:/Users/abdyv/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documents/QUARTUS/LogicaComputacional/CONT_24OV/simulation/qsim
+Z11 8CONT_24OV.vho
+Z12 FCONT_24OV.vho
+l0
+L90
+VRWziFP75;j5^a;[Hd0Fa52
+!s100 QbfR_=9A8Ol?g_JPn72OV1
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1716951730
+!i10b 1
+Z15 !s108 1716951730.000000
+Z16 !s90 -work|work|CONT_24OV.vho|
+Z17 !s107 CONT_24OV.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 9 cont_24ov 0 22 RWziFP75;j5^a;[Hd0Fa52
+l166
+L106
+VT[McgefDG:alZ]<=^GnBk3
+!s100 ?O^NI1OH=MQWJ1hU<_`]D0
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Econt_24ov_vhd_vec_tst
+Z20 w1716951728
+R7
+R8
+R10
+Z21 8CONT_24OV.vwf.vht
+Z22 FCONT_24OV.vwf.vht
+l0
+L31
+V4n^]]OFcCXnLmW58fccK[3
+!s100 WJg>:KCo@f7cnVVQ;8zO51
+R13
+32
+R14
+!i10b 1
+R15
+Z23 !s90 -work|work|CONT_24OV.vwf.vht|
+Z24 !s107 CONT_24OV.vwf.vht|
+!i113 1
+R18
+R19
+Acont_24ov_arch
+R7
+R8
+Z25 DEx4 work 21 cont_24ov_vhd_vec_tst 0 22 4n^]]OFcCXnLmW58fccK[3
+l48
+L33
+VE0zD^UX`686oK;Nd`L@WS0
+!s100 ^CN7jUEUJ1<c7a4h[@M^Q0
+R13
+32
+R14
+!i10b 1
+R15
+R23
+R24
+!i113 1
+R18
+R19
+Ehard_block
+R1
+R4
+R2
+R6
+R7
+R8
+R3
+R10
+R11
+R12
+l0
+L34
+V8_BbEmGd;OHS6h@;gFc7W3
+!s100 ROH=D<N4CT6aCZ<37A[_?0
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
+DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
+l75
+L53
+Vg=W`CQ>24lhYF71zFSkY43
+!s100 zW6ML5NVY?Ai`]`n2XhME3
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19

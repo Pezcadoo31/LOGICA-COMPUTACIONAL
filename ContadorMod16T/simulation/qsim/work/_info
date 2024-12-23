@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/abdyv/OneDrive/Documentos/QUARTUS/ContadorMod16T/simulation/qsim
+vContadorMod16T
+Z1 !s110 1699941037
+!i10b 1
+!s100 ^Wcb40DJdPXfagQA?R[aB3
+ImX44Mz9XUB<c@hS^OF`VV0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1699941033
+Z4 8ContadorMod16T.vo
+Z5 FContadorMod16T.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1699941036.000000
+Z8 !s107 ContadorMod16T.vo|
+Z9 !s90 -work|work|ContadorMod16T.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@contador@mod16@t
+vContadorMod16T_vlg_vec_tst
+R1
+!i10b 1
+!s100 W]<DOOfUb6b8gO5MNdnYk0
+IZ3?l>>CLl;L0[7o665Zn?3
+R2
+R0
+w1699941030
+8ContadorMod16T.vwf.vt
+FContadorMod16T.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+!s108 1699941037.000000
+!s107 ContadorMod16T.vwf.vt|
+!s90 -work|work|ContadorMod16T.vwf.vt|
+!i113 1
+R10
+R11
+n@contador@mod16@t_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 05BZhheg6C6BmWfQN4eg12
+II;:ZON:QM80R`2I0Yn>B<1
+R2
+R0
+R3
+R4
+R5
+L0 408
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

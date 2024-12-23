@@ -1,0 +1,121 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "SALIDA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[17]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[18]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Dato[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Dato[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Dato[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Dato[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel1",
+					"strict" : false
+				},
+				{
+					"name" : "Sel2",
+					"strict" : false
+				},
+				{
+					"name" : "Dato[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Dato[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Dato[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Dato[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

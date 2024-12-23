@@ -1,0 +1,635 @@
+Analysis & Synthesis report for MAS1_100
+Wed Mar 06 12:51:03 2024
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "ha:I799"
+ 10. Port Connectivity Checks: "ha:I200"
+ 11. Port Connectivity Checks: "ha:I99"
+ 12. Port Connectivity Checks: "ha:I0"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Mar 06 12:51:03 2024       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; MAS1_100                                    ;
+; Top-level Entity Name              ; MAS1_100                                    ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 131                                         ;
+;     Total combinational functions  ; 131                                         ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 1,600                                       ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; MAS1_100           ; MAS1_100           ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                         ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
+; ../HA/HA.vhd                     ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HA/HA.vhd             ;         ;
+; MAS1_100.vhd                     ; yes             ; User VHDL File  ; C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 131        ;
+;                                             ;            ;
+; Total combinational functions               ; 131        ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 65         ;
+;     -- 3 input functions                    ; 33         ;
+;     -- <=2 input functions                  ; 33         ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 131        ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 1600       ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; A[0]~input ;
+; Maximum fan-out                             ; 5          ;
+; Total fan-out                               ; 2725       ;
+; Average fan-out                             ; 0.82       ;
++---------------------------------------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; |MAS1_100                  ; 131 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 1600 ; 0            ; 0          ; |MAS1_100           ; MAS1_100    ; work         ;
+;    |ha:I10|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I10    ; ha          ; work         ;
+;    |ha:I11|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I11    ; ha          ; work         ;
+;    |ha:I12|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I12    ; ha          ; work         ;
+;    |ha:I13|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I13    ; ha          ; work         ;
+;    |ha:I14|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I14    ; ha          ; work         ;
+;    |ha:I15|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I15    ; ha          ; work         ;
+;    |ha:I16|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I16    ; ha          ; work         ;
+;    |ha:I17|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I17    ; ha          ; work         ;
+;    |ha:I18|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I18    ; ha          ; work         ;
+;    |ha:I19|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I19    ; ha          ; work         ;
+;    |ha:I1|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I1     ; ha          ; work         ;
+;    |ha:I20|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I20    ; ha          ; work         ;
+;    |ha:I21|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I21    ; ha          ; work         ;
+;    |ha:I22|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I22    ; ha          ; work         ;
+;    |ha:I23|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I23    ; ha          ; work         ;
+;    |ha:I24|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I24    ; ha          ; work         ;
+;    |ha:I25|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I25    ; ha          ; work         ;
+;    |ha:I26|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I26    ; ha          ; work         ;
+;    |ha:I27|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I27    ; ha          ; work         ;
+;    |ha:I28|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I28    ; ha          ; work         ;
+;    |ha:I29|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I29    ; ha          ; work         ;
+;    |ha:I2|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I2     ; ha          ; work         ;
+;    |ha:I30|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I30    ; ha          ; work         ;
+;    |ha:I31|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I31    ; ha          ; work         ;
+;    |ha:I32|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I32    ; ha          ; work         ;
+;    |ha:I33|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I33    ; ha          ; work         ;
+;    |ha:I34|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I34    ; ha          ; work         ;
+;    |ha:I35|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I35    ; ha          ; work         ;
+;    |ha:I36|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I36    ; ha          ; work         ;
+;    |ha:I37|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I37    ; ha          ; work         ;
+;    |ha:I38|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I38    ; ha          ; work         ;
+;    |ha:I39|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I39    ; ha          ; work         ;
+;    |ha:I3|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I3     ; ha          ; work         ;
+;    |ha:I40|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I40    ; ha          ; work         ;
+;    |ha:I41|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I41    ; ha          ; work         ;
+;    |ha:I42|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I42    ; ha          ; work         ;
+;    |ha:I43|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I43    ; ha          ; work         ;
+;    |ha:I44|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I44    ; ha          ; work         ;
+;    |ha:I45|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I45    ; ha          ; work         ;
+;    |ha:I46|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I46    ; ha          ; work         ;
+;    |ha:I47|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I47    ; ha          ; work         ;
+;    |ha:I48|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I48    ; ha          ; work         ;
+;    |ha:I49|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I49    ; ha          ; work         ;
+;    |ha:I4|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I4     ; ha          ; work         ;
+;    |ha:I50|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I50    ; ha          ; work         ;
+;    |ha:I51|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I51    ; ha          ; work         ;
+;    |ha:I52|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I52    ; ha          ; work         ;
+;    |ha:I53|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I53    ; ha          ; work         ;
+;    |ha:I54|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I54    ; ha          ; work         ;
+;    |ha:I55|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I55    ; ha          ; work         ;
+;    |ha:I56|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I56    ; ha          ; work         ;
+;    |ha:I57|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I57    ; ha          ; work         ;
+;    |ha:I58|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I58    ; ha          ; work         ;
+;    |ha:I59|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I59    ; ha          ; work         ;
+;    |ha:I5|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I5     ; ha          ; work         ;
+;    |ha:I60|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I60    ; ha          ; work         ;
+;    |ha:I61|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I61    ; ha          ; work         ;
+;    |ha:I62|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I62    ; ha          ; work         ;
+;    |ha:I63|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I63    ; ha          ; work         ;
+;    |ha:I64|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I64    ; ha          ; work         ;
+;    |ha:I65|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I65    ; ha          ; work         ;
+;    |ha:I66|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I66    ; ha          ; work         ;
+;    |ha:I67|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I67    ; ha          ; work         ;
+;    |ha:I68|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I68    ; ha          ; work         ;
+;    |ha:I69|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I69    ; ha          ; work         ;
+;    |ha:I6|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I6     ; ha          ; work         ;
+;    |ha:I70|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I70    ; ha          ; work         ;
+;    |ha:I71|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I71    ; ha          ; work         ;
+;    |ha:I72|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I72    ; ha          ; work         ;
+;    |ha:I73|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I73    ; ha          ; work         ;
+;    |ha:I74|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I74    ; ha          ; work         ;
+;    |ha:I75|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I75    ; ha          ; work         ;
+;    |ha:I76|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I76    ; ha          ; work         ;
+;    |ha:I77|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I77    ; ha          ; work         ;
+;    |ha:I78|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I78    ; ha          ; work         ;
+;    |ha:I79|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I79    ; ha          ; work         ;
+;    |ha:I7|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I7     ; ha          ; work         ;
+;    |ha:I80|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I80    ; ha          ; work         ;
+;    |ha:I81|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I81    ; ha          ; work         ;
+;    |ha:I82|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I82    ; ha          ; work         ;
+;    |ha:I83|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I83    ; ha          ; work         ;
+;    |ha:I84|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I84    ; ha          ; work         ;
+;    |ha:I85|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I85    ; ha          ; work         ;
+;    |ha:I86|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I86    ; ha          ; work         ;
+;    |ha:I87|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I87    ; ha          ; work         ;
+;    |ha:I88|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I88    ; ha          ; work         ;
+;    |ha:I89|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I89    ; ha          ; work         ;
+;    |ha:I8|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I8     ; ha          ; work         ;
+;    |ha:I90|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I90    ; ha          ; work         ;
+;    |ha:I91|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I91    ; ha          ; work         ;
+;    |ha:I92|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I92    ; ha          ; work         ;
+;    |ha:I93|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I93    ; ha          ; work         ;
+;    |ha:I94|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I94    ; ha          ; work         ;
+;    |ha:I95|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I95    ; ha          ; work         ;
+;    |ha:I96|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I96    ; ha          ; work         ;
+;    |ha:I97|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I97    ; ha          ; work         ;
+;    |ha:I98|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I98    ; ha          ; work         ;
+;    |ha:I99|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I99    ; ha          ; work         ;
+;    |ha:I9|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |MAS1_100|ha:I9     ; ha          ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ha:I799"                                                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------+
+; Port Connectivity Checks: "ha:I200"    ;
++------+-------+----------+--------------+
+; Port ; Type  ; Severity ; Details      ;
++------+-------+----------+--------------+
+; b    ; Input ; Info     ; Stuck at GND ;
++------+-------+----------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ha:I99"                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------+
+; Port Connectivity Checks: "ha:I0"      ;
++------+-------+----------+--------------+
+; Port ; Type  ; Severity ; Details      ;
++------+-------+----------+--------------+
+; b    ; Input ; Info     ; Stuck at VCC ;
++------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 1600                        ;
+; cycloneiii_lcell_comb ; 133                         ;
+;     normal            ; 133                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 33                          ;
+;         3 data inputs ; 33                          ;
+;         4 data inputs ; 65                          ;
+;                       ;                             ;
+; Max LUT depth         ; 33.00                       ;
+; Average LUT depth     ; 5.35                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Wed Mar 06 12:50:49 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MAS1_100 -c MAS1_100
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/abdyv/onedrive/documentos/quartus/logicacomputacional/ha/ha.vhd
+    Info (12022): Found design unit 1: ha-arc File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HA/HA.vhd Line: 17
+    Info (12023): Found entity 1: ha File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/HA/HA.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file mas1_100.vhd
+    Info (12022): Found design unit 1: MAS1_100-arc File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 12
+    Info (12023): Found entity 1: MAS1_100 File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 7
+Info (12127): Elaborating entity "MAS1_100" for the top level hierarchy
+Warning (10873): Using initial value X (don't care) for net "Z[199..100]" at MAS1_100.vhd(9) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+Warning (10873): Using initial value X (don't care) for net "C[199]" at MAS1_100.vhd(20) File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 20
+Info (12128): Elaborating entity "ha" for hierarchy "ha:I0" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 24
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Z[100]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[101]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[102]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[103]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[104]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[105]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[106]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[107]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[108]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[109]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[110]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[111]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[112]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[113]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[114]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[115]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[116]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[117]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[118]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[119]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[120]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[121]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[122]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[123]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[124]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[125]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[126]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[127]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[128]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[129]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[130]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[131]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[132]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[133]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[134]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[135]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[136]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[137]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[138]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[139]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[140]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[141]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[142]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[143]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[144]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[145]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[146]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[147]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[148]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[149]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[150]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[151]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[152]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[153]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[154]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[155]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[156]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[157]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[158]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[159]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[160]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[161]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[162]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[163]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[164]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[165]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[166]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[167]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[168]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[169]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[170]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[171]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[172]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[173]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[174]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[175]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[176]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[177]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[178]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[179]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[180]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[181]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[182]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[183]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[184]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[185]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[186]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[187]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[188]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[189]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[190]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[191]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[192]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[193]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[194]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[195]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[196]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[197]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[198]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+    Warning (13410): Pin "Z[199]" is stuck at GND File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 9
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 100 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "A[100]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[101]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[102]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[103]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[104]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[105]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[106]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[107]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[108]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[109]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[110]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[111]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[112]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[113]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[114]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[115]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[116]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[117]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[118]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[119]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[120]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[121]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[122]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[123]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[124]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[125]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[126]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[127]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[128]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[129]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[130]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[131]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[132]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[133]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[134]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[135]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[136]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[137]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[138]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[139]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[140]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[141]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[142]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[143]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[144]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[145]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[146]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[147]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[148]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[149]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[150]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[151]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[152]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[153]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[154]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[155]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[156]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[157]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[158]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[159]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[160]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[161]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[162]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[163]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[164]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[165]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[166]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[167]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[168]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[169]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[170]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[171]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[172]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[173]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[174]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[175]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[176]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[177]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[178]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[179]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[180]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[181]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[182]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[183]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[184]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[185]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[186]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[187]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[188]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[189]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[190]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[191]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[192]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[193]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[194]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[195]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[196]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[197]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[198]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+    Warning (15610): No output dependent on input pin "A[199]" File: C:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MAS1_100/MAS1_100.vhd Line: 8
+Info (21057): Implemented 1731 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 800 input pins
+    Info (21059): Implemented 800 output pins
+    Info (21061): Implemented 131 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 205 warnings
+    Info: Peak virtual memory: 4798 megabytes
+    Info: Processing ended: Wed Mar 06 12:51:03 2024
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:09
+
+

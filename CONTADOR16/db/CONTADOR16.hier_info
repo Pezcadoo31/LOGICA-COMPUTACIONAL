@@ -1,0 +1,230 @@
+|CONTADOR16
+RST => CT[0].ACLR
+RST => CT[1].ACLR
+RST => CT[2].ACLR
+RST => CT[3].ACLR
+RST => CT[4].ACLR
+RST => CT[5].ACLR
+RST => CT[6].ACLR
+RST => CT[7].ACLR
+RST => CT[8].ACLR
+RST => CT[9].ACLR
+RST => CT[10].ACLR
+RST => CT[11].ACLR
+RST => CT[12].ACLR
+RST => CT[13].ACLR
+RST => CT[14].ACLR
+RST => CT[15].ACLR
+CLK => CT[0].CLK
+CLK => CT[1].CLK
+CLK => CT[2].CLK
+CLK => CT[3].CLK
+CLK => CT[4].CLK
+CLK => CT[5].CLK
+CLK => CT[6].CLK
+CLK => CT[7].CLK
+CLK => CT[8].CLK
+CLK => CT[9].CLK
+CLK => CT[10].CLK
+CLK => CT[11].CLK
+CLK => CT[12].CLK
+CLK => CT[13].CLK
+CLK => CT[14].CLK
+CLK => CT[15].CLK
+CNT[0] <= CT[0].DB_MAX_OUTPUT_PORT_TYPE
+CNT[1] <= CT[1].DB_MAX_OUTPUT_PORT_TYPE
+CNT[2] <= CT[2].DB_MAX_OUTPUT_PORT_TYPE
+CNT[3] <= CT[3].DB_MAX_OUTPUT_PORT_TYPE
+CNT[4] <= CT[4].DB_MAX_OUTPUT_PORT_TYPE
+CNT[5] <= CT[5].DB_MAX_OUTPUT_PORT_TYPE
+CNT[6] <= CT[6].DB_MAX_OUTPUT_PORT_TYPE
+CNT[7] <= CT[7].DB_MAX_OUTPUT_PORT_TYPE
+CNT[8] <= CT[8].DB_MAX_OUTPUT_PORT_TYPE
+CNT[9] <= CT[9].DB_MAX_OUTPUT_PORT_TYPE
+CNT[10] <= CT[10].DB_MAX_OUTPUT_PORT_TYPE
+CNT[11] <= CT[11].DB_MAX_OUTPUT_PORT_TYPE
+CNT[12] <= CT[12].DB_MAX_OUTPUT_PORT_TYPE
+CNT[13] <= CT[13].DB_MAX_OUTPUT_PORT_TYPE
+CNT[14] <= CT[14].DB_MAX_OUTPUT_PORT_TYPE
+CNT[15] <= CT[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0
+A[0] => HA:I0.a
+A[1] => HA:I1.a
+A[2] => HA:I2.a
+A[3] => HA:I3.a
+A[4] => HA:I4.a
+A[5] => HA:I5.a
+A[6] => HA:I6.a
+A[7] => HA:I7.a
+A[8] => HA:I8.a
+A[9] => HA:I9.a
+A[10] => HA:I10.a
+A[11] => HA:I11.a
+A[12] => HA:I12.a
+A[13] => HA:I13.a
+A[14] => HA:I14.a
+A[15] => HA:I15.a
+Z[0] <= HA:I0.s
+Z[1] <= HA:I1.s
+Z[2] <= HA:I2.s
+Z[3] <= HA:I3.s
+Z[4] <= HA:I4.s
+Z[5] <= HA:I5.s
+Z[6] <= HA:I6.s
+Z[7] <= HA:I7.s
+Z[8] <= HA:I8.s
+Z[9] <= HA:I9.s
+Z[10] <= HA:I10.s
+Z[11] <= HA:I11.s
+Z[12] <= HA:I12.s
+Z[13] <= HA:I13.s
+Z[14] <= HA:I14.s
+Z[15] <= HA:I15.s
+
+
+|CONTADOR16|MAS1_16:I0|ha:I0
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I1
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I2
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I3
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I4
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I5
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I6
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I7
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I8
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I9
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I10
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I11
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I12
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I13
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I14
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR16|MAS1_16:I0|ha:I15
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

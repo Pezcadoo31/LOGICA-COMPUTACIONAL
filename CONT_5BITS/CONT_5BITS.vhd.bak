@@ -1,0 +1,26 @@
+
+-- ABDIEL VICENCIO ANTONIO 
+
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+
+Entity CONT_5BITS IS
+	Port ( 	CLK, RST : IN std_logic;
+				ENA : in std_logic;
+				CNT : in std_logic_vector (4 downto 0));
+end ConT_5BITS ;
+
+architecture arc of ConT_5BITS is 
+
+Component MAS1_5BITS is
+	port (	A : IN std_logic_vector (4 downto 0);
+				Z : OUT std_logic_vector (4 downto 0));
+end component;
+
+signal D, Q : std_logic_vector (4 downto 0);
+
+begin 	
+	
+	I0 : MAS1_5BITS port map (D, Q);
+	
+	

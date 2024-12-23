@@ -1,0 +1,139 @@
+|CONTADOR_800
+CLK => OV~reg0.CLK
+CLK => Q[0].CLK
+CLK => Q[1].CLK
+CLK => Q[2].CLK
+CLK => Q[3].CLK
+CLK => Q[4].CLK
+CLK => Q[5].CLK
+CLK => Q[6].CLK
+CLK => Q[7].CLK
+CLK => Q[8].CLK
+CLK => Q[9].CLK
+RST => P1.IN1
+CNT[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+CNT[1] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+CNT[2] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+CNT[3] <= Q[3].DB_MAX_OUTPUT_PORT_TYPE
+CNT[4] <= Q[4].DB_MAX_OUTPUT_PORT_TYPE
+CNT[5] <= Q[5].DB_MAX_OUTPUT_PORT_TYPE
+CNT[6] <= Q[6].DB_MAX_OUTPUT_PORT_TYPE
+CNT[7] <= Q[7].DB_MAX_OUTPUT_PORT_TYPE
+CNT[8] <= Q[8].DB_MAX_OUTPUT_PORT_TYPE
+CNT[9] <= Q[9].DB_MAX_OUTPUT_PORT_TYPE
+OV <= OV~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR_800|MAS1_800:I0
+A[0] => HA:I0.a
+A[1] => HA:I1.a
+A[2] => HA:I2.a
+A[3] => HA:I3.a
+A[4] => HA:I4.a
+A[5] => HA:I5.a
+A[6] => HA:I6.a
+A[7] => HA:I7.a
+A[8] => HA:I8.a
+A[9] => HA:I9.a
+Z[0] <= HA:I0.s
+Z[1] <= HA:I1.s
+Z[2] <= HA:I2.s
+Z[3] <= HA:I3.s
+Z[4] <= HA:I4.s
+Z[5] <= HA:I5.s
+Z[6] <= HA:I6.s
+Z[7] <= HA:I7.s
+Z[8] <= HA:I8.s
+Z[9] <= HA:I9.s
+
+
+|CONTADOR_800|MAS1_800:I0|ha:I0
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR_800|MAS1_800:I0|ha:I1
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR_800|MAS1_800:I0|ha:I2
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR_800|MAS1_800:I0|ha:I3
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR_800|MAS1_800:I0|ha:I4
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR_800|MAS1_800:I0|ha:I5
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR_800|MAS1_800:I0|ha:I6
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR_800|MAS1_800:I0|ha:I7
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR_800|MAS1_800:I0|ha:I8
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CONTADOR_800|MAS1_800:I0|ha:I9
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

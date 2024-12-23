@@ -1,0 +1,478 @@
+$comment
+	File created using the following command:
+		vcd file BCD_CODER.msim.vcd -direction
+$end
+$date
+	Thu Feb 22 00:11:51 2024
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module bcd_coder_vhd_vec_tst $end
+$var wire 1 ! BCD [3] $end
+$var wire 1 " BCD [2] $end
+$var wire 1 # BCD [1] $end
+$var wire 1 $ BCD [0] $end
+$var wire 1 % Seg [6] $end
+$var wire 1 & Seg [5] $end
+$var wire 1 ' Seg [4] $end
+$var wire 1 ( Seg [3] $end
+$var wire 1 ) Seg [2] $end
+$var wire 1 * Seg [1] $end
+$var wire 1 + Seg [0] $end
+
+$scope module i1 $end
+$var wire 1 , gnd $end
+$var wire 1 - vcc $end
+$var wire 1 . unknown $end
+$var wire 1 / devoe $end
+$var wire 1 0 devclrn $end
+$var wire 1 1 devpor $end
+$var wire 1 2 ww_devoe $end
+$var wire 1 3 ww_devclrn $end
+$var wire 1 4 ww_devpor $end
+$var wire 1 5 ww_BCD [3] $end
+$var wire 1 6 ww_BCD [2] $end
+$var wire 1 7 ww_BCD [1] $end
+$var wire 1 8 ww_BCD [0] $end
+$var wire 1 9 ww_Seg [6] $end
+$var wire 1 : ww_Seg [5] $end
+$var wire 1 ; ww_Seg [4] $end
+$var wire 1 < ww_Seg [3] $end
+$var wire 1 = ww_Seg [2] $end
+$var wire 1 > ww_Seg [1] $end
+$var wire 1 ? ww_Seg [0] $end
+$var wire 1 @ \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [4] $end
+$var wire 1 A \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [3] $end
+$var wire 1 B \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [2] $end
+$var wire 1 C \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [1] $end
+$var wire 1 D \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [0] $end
+$var wire 1 E \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 F \~QUARTUS_CREATED_UNVM~~busy\ $end
+$var wire 1 G \~QUARTUS_CREATED_ADC1~~eoc\ $end
+$var wire 1 H \Seg[0]~output_o\ $end
+$var wire 1 I \Seg[1]~output_o\ $end
+$var wire 1 J \Seg[2]~output_o\ $end
+$var wire 1 K \Seg[3]~output_o\ $end
+$var wire 1 L \Seg[4]~output_o\ $end
+$var wire 1 M \Seg[5]~output_o\ $end
+$var wire 1 N \Seg[6]~output_o\ $end
+$var wire 1 O \BCD[2]~input_o\ $end
+$var wire 1 P \BCD[1]~input_o\ $end
+$var wire 1 Q \BCD[0]~input_o\ $end
+$var wire 1 R \BCD[3]~input_o\ $end
+$var wire 1 S \Mux6~0_combout\ $end
+$var wire 1 T \Mux5~0_combout\ $end
+$var wire 1 U \Mux4~0_combout\ $end
+$var wire 1 V \Mux3~0_combout\ $end
+$var wire 1 W \Mux2~0_combout\ $end
+$var wire 1 X \Mux1~0_combout\ $end
+$var wire 1 Y \Mux0~0_combout\ $end
+$var wire 1 Z \ALT_INV_Mux0~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0,
+1-
+x.
+1/
+10
+11
+12
+13
+14
+0E
+zF
+zG
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+1Z
+0!
+0"
+0#
+0$
+05
+06
+07
+08
+19
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+1%
+0&
+0'
+0(
+0)
+0*
+0+
+$end
+#50000
+1$
+18
+1Q
+1S
+1V
+1W
+1X
+1M
+1L
+1K
+1H
+1:
+1;
+1<
+1?
+1+
+1(
+1'
+1&
+#100000
+0$
+1#
+08
+17
+1P
+0Q
+0S
+1U
+0V
+0W
+1Y
+0Z
+0L
+0K
+1J
+0H
+0N
+0;
+0<
+1=
+0?
+09
+0+
+1)
+0(
+0'
+0%
+#150000
+1$
+18
+1Q
+0U
+1W
+1L
+0J
+1;
+0=
+0)
+1'
+#200000
+0$
+0#
+1"
+08
+07
+16
+1O
+0P
+0Q
+1S
+1V
+0X
+0M
+1K
+1H
+0:
+1<
+1?
+1+
+1(
+0&
+#250000
+1$
+18
+1Q
+0S
+1T
+0V
+0K
+1I
+0H
+0<
+1>
+0?
+0+
+1*
+0(
+#300000
+0$
+1#
+08
+17
+1P
+0Q
+1S
+1U
+1V
+1X
+0Y
+1Z
+1M
+1K
+1J
+1H
+1N
+1:
+1<
+1=
+1?
+19
+1+
+1)
+1(
+1&
+1%
+#350000
+1$
+18
+1Q
+0S
+0T
+0U
+0J
+0I
+0H
+0=
+0>
+0?
+0+
+0*
+0)
+#400000
+0$
+0#
+0"
+1!
+08
+07
+06
+15
+1R
+0O
+0P
+0Q
+0V
+0W
+0X
+1Y
+0Z
+0M
+0L
+0K
+0N
+0:
+0;
+0<
+09
+0(
+0'
+0&
+0%
+#450000
+1$
+18
+1Q
+1W
+1L
+1;
+1'
+#500000
+0$
+1#
+08
+17
+1P
+0Q
+1S
+1T
+1U
+1V
+1X
+0Y
+1Z
+1M
+1K
+1J
+1I
+1H
+1N
+1:
+1<
+1=
+1>
+1?
+19
+1+
+1*
+1)
+1(
+1&
+1%
+#550000
+1$
+18
+1Q
+#600000
+0$
+0#
+1"
+08
+07
+16
+1O
+0P
+0Q
+#650000
+1$
+18
+1Q
+#700000
+0$
+1#
+08
+17
+1P
+0Q
+#750000
+1$
+18
+1Q
+#800000
+0$
+0#
+0"
+0!
+08
+07
+06
+05
+0R
+0O
+0P
+0Q
+0S
+0T
+0U
+0V
+0W
+0X
+0M
+0L
+0K
+0J
+0I
+0H
+0:
+0;
+0<
+0=
+0>
+0?
+0+
+0*
+0)
+0(
+0'
+0&
+#850000
+1$
+18
+1Q
+1S
+1V
+1W
+1X
+1M
+1L
+1K
+1H
+1:
+1;
+1<
+1?
+1+
+1(
+1'
+1&
+#900000
+0$
+1#
+08
+17
+1P
+0Q
+0S
+1U
+0V
+0W
+1Y
+0Z
+0L
+0K
+1J
+0H
+0N
+0;
+0<
+1=
+0?
+09
+0+
+1)
+0(
+0'
+0%
+#950000
+1$
+18
+1Q
+0U
+1W
+1L
+0J
+1;
+0=
+0)
+1'
+#1000000

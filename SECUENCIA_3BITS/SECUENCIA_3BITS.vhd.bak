@@ -1,0 +1,40 @@
+--GENERADOR DE SECUENCIA DE 3 BITS --
+-- ABDIEL VICENCIO ANTONIO  -- 
+-- SECUENCIA "000" < "111" > "010" > "011" --
+
+Library IEEE;
+Use Ieee.std_logic_1164.all;
+
+Entity SECUENCIA_3BITS is
+		Port(CLK, RST : IN STD_LOGIC ;
+		SALIDA : out std_LOGIC_vector (2 downto 0));
+	end secUENCIA_3BITS;
+
+Architecture arc of SECUENCIA_3BITS is
+	
+signal EDO, EDOF : STD_LOGIC_vector (3 DOWnto 0);
+	
+BEGIN
+	
+P1: PROCESS (CLK, RST) is 
+	begin
+	if (RST = '0') THEN
+		EDO <= "000";
+	ELSIF (CLK 'EVENT AND CLK = '1') THEN
+		EDO <= EDOF ;
+		END IF ;
+END PROCESS P1;
+
+P2: PROCESS (EDO) 
+	begin 
+	case EDO is 
+		WHEN "000" => EDOF <= "100";
+		WHEN "010" => EDOF <= "011";
+		WHEN "011" => EDOF <= "000";
+		WHEN "100" => EDOF <= "111";
+		WHEN "111" => EDOF <= "010";	
+		WHEN OTHERS => NULL ;
+	END CASE;
+END PROCESS P2;
+
+END arc;

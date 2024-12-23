@@ -1,0 +1,8 @@
+|QUIZ
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+M => inst3.IN0
+P2 => inst5.IN1
+P1 => inst6.IN0
+P3 => inst4.IN0
+
+

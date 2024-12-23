@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Coef[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Coef[15]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

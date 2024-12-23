@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Thu Feb 29 21:49:24 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : MA_EST
+Top-level Entity Name : MA_EST
+Family : MAX 10
+Total logic elements : 41
+    Total combinational functions : 41
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 56
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

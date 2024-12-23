@@ -1,0 +1,119 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/abdyv/OneDrive/Documentos/QUARTUS/HA/simulation/qsim
+vFA
+Z1 !s110 1707889714
+!i10b 1
+!s100 :3I>VHXFUd1JWQ19NmPL@2
+I^c=<Ljo@I]b:?I_V2e?4W2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1707889714
+Z4 8HA.vo
+Z5 FHA.vo
+Z6 L0 31
+Z7 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z8 !s108 1707889714.000000
+Z9 !s107 HA.vo|
+Z10 !s90 -work|work|HA.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@f@a
+vFA_vlg_vec_tst
+R1
+!i10b 1
+!s100 W:zNIMl2;[DhNUB_RY>a92
+IaFnNk@E`o>IT:lfOAGjBB0
+R2
+R0
+w1707889713
+8FA.vwf.vt
+FFA.vwf.vt
+Z13 L0 29
+R7
+r1
+!s85 0
+31
+R8
+!s107 FA.vwf.vt|
+!s90 -work|work|FA.vwf.vt|
+!i113 1
+R11
+R12
+n@f@a_vlg_vec_tst
+vHA
+Z14 !s110 1707887883
+!i10b 1
+!s100 BG;5cHARjN3z=i;<JNhOg0
+I84UE;ciclnL3`Mja:;_`R1
+R2
+R0
+w1707887882
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z15 !s108 1707887883.000000
+R9
+R10
+!i113 1
+R11
+R12
+n@h@a
+vHA_vlg_vec_tst
+R14
+!i10b 1
+!s100 g26Y;jifOJ`zzPNG^FC_]0
+Ib_mho?Qf;b;9kS9GE8L4H0
+R2
+R0
+w1707887881
+8HA.vwf.vt
+FHA.vwf.vt
+R13
+R7
+r1
+!s85 0
+31
+R15
+!s107 HA.vwf.vt|
+!s90 -work|work|HA.vwf.vt|
+!i113 1
+R11
+R12
+n@h@a_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 h6G7IVmzANYN98dVJDF0j3
+INam_cQ3X=O7<0b?X58jMT2
+R2
+R0
+R3
+R4
+R5
+L0 238
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12

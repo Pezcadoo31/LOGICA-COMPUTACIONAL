@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/abdyv/OneDrive/Documentos/QUARTUS/LogicaComputacional/MUX_SEM/simulation/qsim
+Ehard_block
+Z1 w1709266740
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
+R0
+Z8 8MUX_SEM.vho
+Z9 FMUX_SEM.vho
+l0
+L34
+V8_BbEmGd;OHS6h@;gFc7W3
+!s100 ROH=D<N4CT6aCZ<37A[_?0
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1709266741
+!i10b 1
+Z12 !s108 1709266741.000000
+Z13 !s90 -work|work|MUX_SEM.vho|
+Z14 !s107 MUX_SEM.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
+l75
+L53
+Vg=W`CQ>24lhYF71zFSkY43
+!s100 zW6ML5NVY?Ai`]`n2XhME3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Emux_sem
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L88
+V:oV_iI3]PEk0flYe?Lc>P2
+!s100 G1HzG:@2`4^YEc;a9<CnC2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 7 mux_sem 0 22 :oV_iI3]PEk0flYe?Lc>P2
+l199
+L135
+VAA4?C;GGm]kEXgSYaALzW3
+!s100 7<Ko]O9aojX6:Xk9FMWC[3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Emux_sem_vhd_vec_tst
+Z17 w1709266739
+R5
+R6
+R0
+Z18 8MUX_SEM.vwf.vht
+Z19 FMUX_SEM.vwf.vht
+l0
+L31
+V58n4AhN[En7>XjB]5F9<12
+!s100 eJPWIC9@KeGhb8EXK1z2Y2
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|MUX_SEM.vwf.vht|
+Z21 !s107 MUX_SEM.vwf.vht|
+!i113 1
+R15
+R16
+Amux_sem_arch
+R5
+R6
+Z22 DEx4 work 19 mux_sem_vhd_vec_tst 0 22 58n4AhN[En7>XjB]5F9<12
+l54
+L33
+V=Oh4hZ:>XeDWB:W9lRMA=3
+!s100 8dBGNbV5GH0Rl^;5M9MIC2
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16

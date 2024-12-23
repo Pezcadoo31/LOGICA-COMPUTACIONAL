@@ -1,0 +1,16 @@
+|PiedraPapelTijeras
+S <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst51.IN0
+A => inst52.IN0
+A => inst50.IN0
+B => inst49.IN1
+B => inst46.IN0
+B => inst50.IN1
+D => inst49.IN2
+D => inst48.IN0
+D => inst52.IN3
+C => inst51.IN1
+C => inst50.IN2
+
+

@@ -1,0 +1,8 @@
+
+-- ABDIEL VICENCIO ANTONIO 
+
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+
+Entity CONT_24OV is
+Port ();

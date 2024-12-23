@@ -1,0 +1,133 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "RS",
+					"strict" : false
+				},
+				{
+					"name" : "E",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_BLON",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_ON",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "RST",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ENA_LCD[15]",
+					"strict" : false
+				},
+				{
+					"name" : "START",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/abdyv/OneDrive/Documentos/QUARTUS/PiedraPapelTijeras2/simulation/qsim
+vhard_block
+Z1 !s110 1699501839
+!i10b 1
+!s100 VROgg@?0jO`=nPV_;WEfb2
+IBim8eUPDPAzdYD8GfH0Eh1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1699501838
+Z4 8PiedraPapelTijeras2.vo
+Z5 FPiedraPapelTijeras2.vo
+L0 235
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1699501839.000000
+Z8 !s107 PiedraPapelTijeras2.vo|
+Z9 !s90 -work|work|PiedraPapelTijeras2.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vPiedraPapelTijeras2
+R1
+!i10b 1
+!s100 iz_67C4ZQ:V@02iOZS^L02
+I=2><Q<ce_zWOVVe5l2YfJ2
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@piedra@papel@tijeras2
+vPiedraPapelTijeras2_vlg_vec_tst
+R1
+!i10b 1
+!s100 [d?>MI>H5UHK@^dGMPoN42
+IgXabWfKEkcM@nJ7>z029f1
+R2
+R0
+R3
+8PiedraPapelTijeras2.vwf.vt
+FPiedraPapelTijeras2.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 PiedraPapelTijeras2.vwf.vt|
+!s90 -work|work|PiedraPapelTijeras2.vwf.vt|
+!i113 1
+R10
+R11
+n@piedra@papel@tijeras2_vlg_vec_tst

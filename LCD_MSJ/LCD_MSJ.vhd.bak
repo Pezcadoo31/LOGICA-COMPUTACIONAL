@@ -1,0 +1,15 @@
+
+-- ABDIEL VICENCIO ANTONIO 
+
+Library IEEE;
+Use IEEE.std_logic_1164.all;
+
+Entity LCD_MSJ is
+	port ( 	CLK, RST, START : in std_logic;
+				LCD_BLON, LCD_ON, RS, RW : out std_logic ;
+				DATA_OUT : out std_logic_vector (7 downto 0));
+end entity;
+
+architecture arc of LCD_MSJ is
+
+component 

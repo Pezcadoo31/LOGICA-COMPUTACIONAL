@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/abdyv/OneDrive/Documentos/QUARTUS/HAMMINGS3/simulation/qsim
+vHAMMINGS3
+Z1 !s110 1699575297
+!i10b 1
+!s100 eiemYD8n[bH<0j<iEn^Vm1
+IC07dk`@=_AmWXP@i2@5V@1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1699575297
+Z4 8HAMMINGS3.vo
+Z5 FHAMMINGS3.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1699575297.000000
+Z8 !s107 HAMMINGS3.vo|
+Z9 !s90 -work|work|HAMMINGS3.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@h@a@m@m@i@n@g@s3
+vHAMMINGS3_vlg_vec_tst
+R1
+!i10b 1
+!s100 4UM>UTB^FRiP^cfOkF6;L1
+IgO:c`BPLnk9G_eN8@CUNT1
+R2
+R0
+w1699575296
+8HAMMINGS3.vwf.vt
+FHAMMINGS3.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 HAMMINGS3.vwf.vt|
+!s90 -work|work|HAMMINGS3.vwf.vt|
+!i113 1
+R10
+R11
+n@h@a@m@m@i@n@g@s3_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 VROgg@?0jO`=nPV_;WEfb2
+IcAn2@E7O;G0CUhORYLeF71
+R2
+R0
+R3
+R4
+R5
+L0 235
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

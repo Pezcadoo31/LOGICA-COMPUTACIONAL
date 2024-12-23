@@ -1,0 +1,620 @@
+|SEMAFORO_DE10
+Horario[0] => MUX_SEM:I2.horario[0]
+Horario[1] => MUX_SEM:I2.horario[1]
+Horario[2] => MUX_SEM:I2.horario[2]
+CLK => CONT_24OV:I0.clk
+CLK => CONT_5BITS:I1.CLK
+CLK => MA_EST:I3.clk
+RST => CONT_24OV:I0.rst
+RST => CONT_5BITS:I1.RST
+RST => MA_EST:I3.rst
+START => CONT_24OV:I0.start
+START => MA_EST:I3.start
+NOCT => MA_EST:I3.noct
+NS[0] << MA_EST:I3.SN[0]
+NS[1] << MA_EST:I3.SN[1]
+NS[2] << MA_EST:I3.SN[2]
+SN[0] << MA_EST:I3.NS[0]
+SN[1] << MA_EST:I3.NS[1]
+SN[2] << MA_EST:I3.NS[2]
+OE[0] << MA_EST:I3.OE[0]
+OE[1] << MA_EST:I3.OE[1]
+OE[2] << MA_EST:I3.OE[2]
+OE[3] << MA_EST:I3.OE[3]
+EO[0] << MA_EST:I3.EO[0]
+EO[1] << MA_EST:I3.EO[1]
+EO[2] << MA_EST:I3.EO[2]
+EO[3] << MA_EST:I3.EO[3]
+
+
+|SEMAFORO_DE10|CONT_24OV:I0
+clk => Q_FF.CLK
+clk => Q[0].CLK
+clk => Q[1].CLK
+clk => Q[2].CLK
+clk => Q[3].CLK
+clk => Q[4].CLK
+clk => Q[5].CLK
+clk => Q[6].CLK
+clk => Q[7].CLK
+clk => Q[8].CLK
+clk => Q[9].CLK
+clk => Q[10].CLK
+clk => Q[11].CLK
+clk => Q[12].CLK
+clk => Q[13].CLK
+clk => Q[14].CLK
+clk => Q[15].CLK
+clk => Q[16].CLK
+clk => Q[17].CLK
+clk => Q[18].CLK
+clk => Q[19].CLK
+clk => Q[20].CLK
+clk => Q[21].CLK
+clk => Q[22].CLK
+clk => Q[23].CLK
+rst => PR.IN0
+start => PR.IN1
+OV <= Q_FF.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0
+A[0] => HA:I0.a
+A[1] => HA:I1.a
+A[2] => HA:I2.a
+A[3] => HA:I3.a
+A[4] => HA:I4.a
+A[5] => HA:I5.a
+A[6] => HA:I6.a
+A[7] => HA:I7.a
+A[8] => HA:I8.a
+A[9] => HA:I9.a
+A[10] => HA:I10.a
+A[11] => HA:I11.a
+A[12] => HA:I12.a
+A[13] => HA:I13.a
+A[14] => HA:I14.a
+A[15] => HA:I15.a
+A[16] => HA:I16.a
+A[17] => HA:I17.a
+A[18] => HA:I18.a
+A[19] => HA:I19.a
+A[20] => HA:I20.a
+A[21] => HA:I21.a
+A[22] => HA:I22.a
+A[23] => HA:I23.a
+OV <= HA:I23.Cout
+Z[0] <= HA:I0.s
+Z[1] <= HA:I1.s
+Z[2] <= HA:I2.s
+Z[3] <= HA:I3.s
+Z[4] <= HA:I4.s
+Z[5] <= HA:I5.s
+Z[6] <= HA:I6.s
+Z[7] <= HA:I7.s
+Z[8] <= HA:I8.s
+Z[9] <= HA:I9.s
+Z[10] <= HA:I10.s
+Z[11] <= HA:I11.s
+Z[12] <= HA:I12.s
+Z[13] <= HA:I13.s
+Z[14] <= HA:I14.s
+Z[15] <= HA:I15.s
+Z[16] <= HA:I16.s
+Z[17] <= HA:I17.s
+Z[18] <= HA:I18.s
+Z[19] <= HA:I19.s
+Z[20] <= HA:I20.s
+Z[21] <= HA:I21.s
+Z[22] <= HA:I22.s
+Z[23] <= HA:I23.s
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I0
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I1
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I2
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I3
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I4
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I5
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I6
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I7
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I8
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I9
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I10
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I11
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I12
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I13
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I14
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I15
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I16
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I17
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I18
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I19
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I20
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I21
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I22
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_24OV:I0|MAS1_24BITS:I0|ha:I23
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_5BITS:I1
+CLK => Q[0].CLK
+CLK => Q[1].CLK
+CLK => Q[2].CLK
+CLK => Q[3].CLK
+CLK => Q[4].CLK
+RST => Q[0].ACLR
+RST => Q[1].ACLR
+RST => Q[2].ACLR
+RST => Q[3].ACLR
+RST => Q[4].ACLR
+ENA => Q[0].ENA
+ENA => Q[1].ENA
+ENA => Q[2].ENA
+ENA => Q[3].ENA
+ENA => Q[4].ENA
+CNTA[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+CNTA[1] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+CNTA[2] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+CNTA[3] <= Q[3].DB_MAX_OUTPUT_PORT_TYPE
+CNTA[4] <= Q[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_5BITS:I1|MAS1:I0
+A[0] => HA:I0.a
+A[1] => HA:I1.a
+A[2] => HA:I2.a
+A[3] => HA:I3.a
+A[4] => Z.IN1
+Z[0] <= HA:I0.s
+Z[1] <= HA:I1.s
+Z[2] <= HA:I2.s
+Z[3] <= HA:I3.s
+Z[4] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_5BITS:I1|MAS1:I0|ha:I0
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_5BITS:I1|MAS1:I0|ha:I1
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_5BITS:I1|MAS1:I0|ha:I2
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|CONT_5BITS:I1|MAS1:I0|ha:I3
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|MUX_SEM:I2
+horario[0] => Mux0.IN10
+horario[0] => Mux1.IN10
+horario[0] => Mux2.IN10
+horario[0] => Mux3.IN10
+horario[0] => Mux5.IN10
+horario[0] => Mux6.IN10
+horario[0] => Mux7.IN10
+horario[0] => Mux8.IN10
+horario[0] => Mux9.IN10
+horario[0] => Mux10.IN10
+horario[0] => Mux11.IN10
+horario[0] => Mux12.IN10
+horario[0] => Mux13.IN10
+horario[0] => Mux14.IN10
+horario[0] => Mux15.IN10
+horario[0] => Mux16.IN10
+horario[0] => Mux17.IN10
+horario[0] => Mux18.IN10
+horario[0] => Mux19.IN10
+horario[0] => Mux20.IN10
+horario[0] => Mux21.IN10
+horario[0] => Mux22.IN10
+horario[0] => Mux23.IN10
+horario[0] => Mux24.IN10
+horario[0] => Mux25.IN10
+horario[0] => Mux26.IN10
+horario[0] => Mux27.IN10
+horario[1] => Mux0.IN9
+horario[1] => Mux1.IN9
+horario[1] => Mux2.IN9
+horario[1] => Mux3.IN9
+horario[1] => Mux4.IN5
+horario[1] => Mux5.IN9
+horario[1] => Mux6.IN9
+horario[1] => Mux7.IN9
+horario[1] => Mux8.IN9
+horario[1] => Mux9.IN9
+horario[1] => Mux10.IN9
+horario[1] => Mux11.IN9
+horario[1] => Mux12.IN9
+horario[1] => Mux13.IN9
+horario[1] => Mux14.IN9
+horario[1] => Mux15.IN9
+horario[1] => Mux16.IN9
+horario[1] => Mux17.IN9
+horario[1] => Mux18.IN9
+horario[1] => Mux19.IN9
+horario[1] => Mux20.IN9
+horario[1] => Mux21.IN9
+horario[1] => Mux22.IN9
+horario[1] => Mux23.IN9
+horario[1] => Mux24.IN9
+horario[1] => Mux25.IN9
+horario[1] => Mux26.IN9
+horario[1] => Mux27.IN9
+horario[2] => Mux0.IN8
+horario[2] => Mux1.IN8
+horario[2] => Mux2.IN8
+horario[2] => Mux3.IN8
+horario[2] => Mux4.IN4
+horario[2] => Mux5.IN8
+horario[2] => Mux6.IN8
+horario[2] => Mux7.IN8
+horario[2] => Mux8.IN8
+horario[2] => Mux9.IN8
+horario[2] => Mux10.IN8
+horario[2] => Mux11.IN8
+horario[2] => Mux12.IN8
+horario[2] => Mux13.IN8
+horario[2] => Mux14.IN8
+horario[2] => Mux15.IN8
+horario[2] => Mux16.IN8
+horario[2] => Mux17.IN8
+horario[2] => Mux18.IN8
+horario[2] => Mux19.IN8
+horario[2] => Mux20.IN8
+horario[2] => Mux21.IN8
+horario[2] => Mux22.IN8
+horario[2] => Mux23.IN8
+horario[2] => Mux24.IN8
+horario[2] => Mux25.IN8
+horario[2] => Mux26.IN8
+horario[2] => Mux27.IN8
+T1[0] <= <GND>
+T1[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+T1[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+T1[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+T1[4] <= <GND>
+T2[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+T2[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+T2[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+T2[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+T2[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+T3[0] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+T3[1] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+T3[2] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+T3[3] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+T3[4] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+T4[0] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
+T4[1] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+T4[2] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+T4[3] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+T4[4] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+T5[0] <= Mux22.DB_MAX_OUTPUT_PORT_TYPE
+T5[1] <= Mux21.DB_MAX_OUTPUT_PORT_TYPE
+T5[2] <= Mux20.DB_MAX_OUTPUT_PORT_TYPE
+T5[3] <= Mux19.DB_MAX_OUTPUT_PORT_TYPE
+T5[4] <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
+T6[0] <= Mux27.DB_MAX_OUTPUT_PORT_TYPE
+T6[1] <= Mux26.DB_MAX_OUTPUT_PORT_TYPE
+T6[2] <= Mux25.DB_MAX_OUTPUT_PORT_TYPE
+T6[3] <= Mux24.DB_MAX_OUTPUT_PORT_TYPE
+T6[4] <= Mux23.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO_DE10|MA_EST:I3
+clk => Noche.CLK
+clk => edo~1.DATAIN
+rst => edo~3.DATAIN
+rst => Noche.ENA
+start => Selector1.IN3
+start => Selector0.IN1
+noct => est[2]$latch.LATCH_ENABLE
+noct => est[1]$latch.LATCH_ENABLE
+noct => est[0]$latch.LATCH_ENABLE
+noct => Noche.OUTPUTSELECT
+noct => EO.OUTPUTSELECT
+noct => EO.OUTPUTSELECT
+noct => EO.OUTPUTSELECT
+noct => EO.OUTPUTSELECT
+noct => OE.OUTPUTSELECT
+noct => OE.OUTPUTSELECT
+noct => OE.OUTPUTSELECT
+noct => OE.OUTPUTSELECT
+noct => NS.OUTPUTSELECT
+noct => NS.OUTPUTSELECT
+noct => NS.OUTPUTSELECT
+noct => SN.OUTPUTSELECT
+noct => SN.OUTPUTSELECT
+noct => SN.OUTPUTSELECT
+T1[0] => Equal0.IN4
+T1[1] => Equal0.IN3
+T1[2] => Equal0.IN2
+T1[3] => Equal0.IN1
+T1[4] => Equal0.IN0
+T2[0] => Equal1.IN4
+T2[1] => Equal1.IN3
+T2[2] => Equal1.IN2
+T2[3] => Equal1.IN1
+T2[4] => Equal1.IN0
+T3[0] => Equal2.IN4
+T3[1] => Equal2.IN3
+T3[2] => Equal2.IN2
+T3[3] => Equal2.IN1
+T3[4] => Equal2.IN0
+T4[0] => Equal3.IN4
+T4[1] => Equal3.IN3
+T4[2] => Equal3.IN2
+T4[3] => Equal3.IN1
+T4[4] => Equal3.IN0
+T5[0] => Equal4.IN4
+T5[1] => Equal4.IN3
+T5[2] => Equal4.IN2
+T5[3] => Equal4.IN1
+T5[4] => Equal4.IN0
+T6[0] => Equal5.IN4
+T6[1] => Equal5.IN3
+T6[2] => Equal5.IN2
+T6[3] => Equal5.IN1
+T6[4] => Equal5.IN0
+cnt[0] => Equal0.IN9
+cnt[0] => Equal1.IN9
+cnt[0] => Equal2.IN9
+cnt[0] => Equal3.IN9
+cnt[0] => Equal4.IN9
+cnt[0] => Equal5.IN9
+cnt[1] => Equal0.IN8
+cnt[1] => Equal1.IN8
+cnt[1] => Equal2.IN8
+cnt[1] => Equal3.IN8
+cnt[1] => Equal4.IN8
+cnt[1] => Equal5.IN8
+cnt[2] => Equal0.IN7
+cnt[2] => Equal1.IN7
+cnt[2] => Equal2.IN7
+cnt[2] => Equal3.IN7
+cnt[2] => Equal4.IN7
+cnt[2] => Equal5.IN7
+cnt[3] => Equal0.IN6
+cnt[3] => Equal1.IN6
+cnt[3] => Equal2.IN6
+cnt[3] => Equal3.IN6
+cnt[3] => Equal4.IN6
+cnt[3] => Equal5.IN6
+cnt[4] => Equal0.IN5
+cnt[4] => Equal1.IN5
+cnt[4] => Equal2.IN5
+cnt[4] => Equal3.IN5
+cnt[4] => Equal4.IN5
+cnt[4] => Equal5.IN5
+EO[0] <= EO.DB_MAX_OUTPUT_PORT_TYPE
+EO[1] <= EO.DB_MAX_OUTPUT_PORT_TYPE
+EO[2] <= EO.DB_MAX_OUTPUT_PORT_TYPE
+EO[3] <= EO.DB_MAX_OUTPUT_PORT_TYPE
+OE[0] <= OE.DB_MAX_OUTPUT_PORT_TYPE
+OE[1] <= OE.DB_MAX_OUTPUT_PORT_TYPE
+OE[2] <= OE.DB_MAX_OUTPUT_PORT_TYPE
+OE[3] <= OE.DB_MAX_OUTPUT_PORT_TYPE
+NS[0] <= NS.DB_MAX_OUTPUT_PORT_TYPE
+NS[1] <= NS.DB_MAX_OUTPUT_PORT_TYPE
+NS[2] <= NS.DB_MAX_OUTPUT_PORT_TYPE
+SN[0] <= SN.DB_MAX_OUTPUT_PORT_TYPE
+SN[1] <= SN.DB_MAX_OUTPUT_PORT_TYPE
+SN[2] <= SN.DB_MAX_OUTPUT_PORT_TYPE
+est[0] <= est[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+est[1] <= est[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+est[2] <= est[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

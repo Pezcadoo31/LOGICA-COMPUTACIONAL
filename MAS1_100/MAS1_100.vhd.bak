@@ -1,0 +1,126 @@
+
+-- ABDIEL VICENCIO ANTONIO
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity MAS1_100 is 
+    port ( A : in std_logic_vector (99 downto 0);
+           Z : out std_logic_vector(99 downto 0));
+end MAS1_100;
+
+architecture arc of MAS1_100 is 
+
+    component HA is
+        port ( a, b : in std_logic;
+               s, Cout : out std_logic
+        );
+    end component HA;
+	 
+signal C : std_logic_vector(799 downto 0);
+
+Begin 
+	
+    I0 : HA port map (A(0), '1', Z(0), C(0));
+    I1 : HA port map (A(1), C(0), Z(1), C(1));
+    I2 : HA port map (A(2), C(1), Z(2), C(2));
+    I3 : HA port map (A(3), C(2), Z(3), C(3));
+    I4 : HA port map (A(4), C(3), Z(4), C(4));
+    I5 : HA port map (A(5), C(4), Z(5), C(5));
+    I6 : HA port map (A(6), C(5), Z(6), C(6));
+    I7 : HA port map (A(7), C(6), Z(7), C(7));
+    I8 : HA port map (A(8), C(7), Z(8), C(8));
+    I9 : HA port map (A(9), C(8), Z(9), C(9));
+	 I10 : HA port map (A(10), C(9), Z(10), C(10));
+	 I11 : HA port map (A(11), C(10), Z(11), C(11));
+	 I12 : HA port map (A(12), C(11), Z(12), C(12));
+	 I13 : HA port map (A(13), C(12), Z(13), C(13));
+	 I14 : HA port map (A(14), C(13), Z(14), C(14));
+	 I15 : HA port map (A(15), C(14), Z(15), C(15));
+	 I16  : HA port map (A(16), C(15), Z(16), C(16));
+    I17  : HA port map (A(17), C(16), Z(17), C(17));
+    I18  : HA port map (A(18), C(17), Z(18), C(18));
+    I19  : HA port map (A(19), C(18), Z(19), C(19));
+    I20  : HA port map (A(20), C(19), Z(20), C(20));
+    I21  : HA port map (A(21), C(20), Z(21), C(21));
+    I22  : HA port map (A(22), C(21), Z(22), C(22));
+    I23  : HA port map (A(23), C(22), Z(23), C(23));
+    I24  : HA port map (A(24), C(23), Z(24), C(24));
+    I25  : HA port map (A(25), C(24), Z(25), C(25));
+    I26  : HA port map (A(26), C(25), Z(26), C(26));
+    I27  : HA port map (A(27), C(26), Z(27), C(27));
+    I28  : HA port map (A(28), C(27), Z(28), C(28));
+    I29  : HA port map (A(29), C(28), Z(29), C(29));
+    I30  : HA port map (A(30), C(29), Z(30), C(30));
+    I31  : HA port map (A(31), C(30), Z(31), C(31));
+    I32  : HA port map (A(32), C(31), Z(32), C(32));
+    I33  : HA port map (A(33), C(32), Z(33), C(33));
+    I34  : HA port map (A(34), C(33), Z(34), C(34));
+    I35  : HA port map (A(35), C(34), Z(35), C(35));
+    I36  : HA port map (A(36), C(35), Z(36), C(36));
+    I37  : HA port map (A(37), C(36), Z(37), C(37));
+    I38  : HA port map (A(38), C(37), Z(38), C(38));
+    I39  : HA port map (A(39), C(38), Z(39), C(39));
+    I40  : HA port map (A(40), C(39), Z(40), C(40));
+    I41  : HA port map (A(41), C(40), Z(41), C(41));
+    I42  : HA port map (A(42), C(41), Z(42), C(42));
+    I43  : HA port map (A(43), C(42), Z(43), C(43));
+    I44  : HA port map (A(44), C(43), Z(44), C(44));
+    I45  : HA port map (A(45), C(44), Z(45), C(45));
+    I46  : HA port map (A(46), C(45), Z(46), C(46));
+    I47  : HA port map (A(47), C(46), Z(47), C(47));
+    I48  : HA port map (A(48), C(47), Z(48), C(48));
+    I49  : HA port map (A(49), C(48), Z(49), C(49));
+    I50  : HA port map (A(50), C(49), Z(50), C(50));
+    I51  : HA port map (A(51), C(50), Z(51), C(51));
+    I52  : HA port map (A(52), C(51), Z(52), C(52));
+    I53  : HA port map (A(53), C(52), Z(53), C(53));
+    I54  : HA port map (A(54), C(53), Z(54), C(54));
+    I55  : HA port map (A(55), C(54), Z(55), C(55));
+    I56  : HA port map (A(56), C(55), Z(56), C(56));
+    I57  : HA port map (A(57), C(56), Z(57), C(57));
+    I58  : HA port map (A(58), C(57), Z(58), C(58));
+    I59  : HA port map (A(59), C(58), Z(59), C(59));
+    I60  : HA port map (A(60), C(59), Z(60), C(60));
+    I61  : HA port map (A(61), C(60), Z(61), C(61));
+    I62  : HA port map (A(62), C(61), Z(62), C(62));
+    I63  : HA port map (A(63), C(62), Z(63), C(63));
+    I64  : HA port map (A(64), C(63), Z(64), C(64));
+    I65  : HA port map (A(65), C(64), Z(65), C(65));
+    I66  : HA port map (A(66), C(65), Z(66), C(66));
+    I67  : HA port map (A(67), C(66), Z(67), C(67));
+    I68  : HA port map (A(68), C(67), Z(68), C(68));
+    I69  : HA port map (A(69), C(68), Z(69), C(69));
+    I70  : HA port map (A(70), C(69), Z(70), C(70));
+    I71  : HA port map (A(71), C(70), Z(71), C(71));
+    I72  : HA port map (A(72), C(71), Z(72), C(72));
+    I73  : HA port map (A(73), C(72), Z(73), C(73));
+    I74  : HA port map (A(74), C(73), Z(74), C(74));
+    I75  : HA port map (A(75), C(74), Z(75), C(75));
+    I76  : HA port map (A(76), C(75), Z(76), C(76));
+    I77  : HA port map (A(77), C(76), Z(77), C(77));
+    I78  : HA port map (A(78), C(77), Z(78), C(78));
+    I79  : HA port map (A(79), C(78), Z(79), C(79));
+    I80  : HA port map (A(80), C(79), Z(80), C(80));
+    I81  : HA port map (A(81), C(80), Z(81), C(81));
+    I82  : HA port map (A(82), C(81), Z(82), C(82));
+    I83  : HA port map (A(83), C(82), Z(83), C(83));
+    I84  : HA port map (A(84), C(83), Z(84), C(84));
+    I85  : HA port map (A(85), C(84), Z(85), C(85));
+    I86  : HA port map (A(86), C(85), Z(86), C(86));
+    I87  : HA port map (A(87), C(86), Z(87), C(87));
+    I88  : HA port map (A(88), C(87), Z(88), C(88));
+    I89  : HA port map (A(89), C(88), Z(89), C(89));
+    I90  : HA port map (A(90), C(89), Z(90), C(90));
+    I91  : HA port map (A(91), C(90), Z(91), C(91));
+    I92  : HA port map (A(92), C(91), Z(92), C(92));
+    I93  : HA port map (A(93), C(92), Z(93), C(93));
+    I94  : HA port map (A(94), C(93), Z(94), C(94));
+    I95  : HA port map (A(95), C(94), Z(95), C(95));
+    I96  : HA port map (A(96), C(95), Z(96), C(96));
+    I97  : HA port map (A(97), C(96), Z(97), C(97));
+    I98  : HA port map (A(98), C(97), Z(98), C(98));
+    I99  : HA port map (A(99), C(98), Z(99), C(99));
+	 
+END ARC;
+

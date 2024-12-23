@@ -1,0 +1,10 @@
+
+State Machine - |SEMAFORO_DE10|MA_EST:I3|edo
+Name edo.s6 edo.s5 edo.s4 edo.s3 edo.s2 edo.s1 edo.s0 
+edo.s0 0 0 0 0 0 0 0 
+edo.s1 0 0 0 0 0 1 1 
+edo.s2 0 0 0 0 1 0 1 
+edo.s3 0 0 0 1 0 0 1 
+edo.s4 0 0 1 0 0 0 1 
+edo.s5 0 1 0 0 0 0 1 
+edo.s6 1 0 0 0 0 0 1 

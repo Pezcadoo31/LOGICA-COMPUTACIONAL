@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/abdyv/OneDrive/Documentos/QUARTUS/DivisorDeCorriente/simulation/qsim
+vDivisorDeCorriente
+Z1 !s110 1700106554
+!i10b 1
+!s100 [CXkOg^DVbV1YW2P68cMh2
+ID^69?_Q@gGTTR3zg>a1`00
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1700106553
+Z4 8DivisorDeCorriente.vo
+Z5 FDivisorDeCorriente.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1700106554.000000
+Z8 !s107 DivisorDeCorriente.vo|
+Z9 !s90 -work|work|DivisorDeCorriente.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@divisor@de@corriente
+vDivisorDeCorriente_vlg_vec_tst
+R1
+!i10b 1
+!s100 @7<g;WTJXa<UU49=lSNb72
+IenSmfz1lLiMnlc7>F0F3T1
+R2
+R0
+w1700106552
+8DivisorDeCorriente.vwf.vt
+FDivisorDeCorriente.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 DivisorDeCorriente.vwf.vt|
+!s90 -work|work|DivisorDeCorriente.vwf.vt|
+!i113 1
+R10
+R11
+n@divisor@de@corriente_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 EEAcRTazii:2LN3Kj1lll1
+IDDi96RY0:51<YEf0gaLB_0
+R2
+R0
+R3
+R4
+R5
+L0 481
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

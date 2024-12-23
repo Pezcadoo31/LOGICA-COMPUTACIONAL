@@ -1,0 +1,9 @@
+
+-- ABDIEL VICENCIO ANTONIO
+
+Libary IEEE;
+Use IEEE.std_logic_1164.all;
+
+Entity SEMAFORO_DE10 IS
+PORT ( 	Horario : in std_logic_vector (2 downto 0), 
+			CLK, RST, );

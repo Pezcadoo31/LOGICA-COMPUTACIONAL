@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "SALIDA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ENTRADA[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

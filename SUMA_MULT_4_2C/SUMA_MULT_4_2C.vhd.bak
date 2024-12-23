@@ -1,0 +1,29 @@
+-- SUMA DEL MULTIPLICADOR DE 4 BITS 
+-- ABDIEL VICENCIO ANTONIO 
+
+Library IEEE;
+Use std_logic_1164.all;
+
+Entity SUMA_MULT_4_2C is 
+	Port (	Coef : in std_logic_vector (15 downto 0);
+				B_3 : in std_logic ;
+				M : out std_logic_vector (8 downto 0) );
+end SUMA_MULT_4_2C;
+
+architecture arc of SUMA_MULT_4_2C IS 
+	
+component HA is 
+	port ( a, b : in std_logic;
+			s, Cout : out std_logic);
+end component HA;
+
+component FA is 
+	port ( a, b, Cin : in std_logic;
+			s, Cout : out std_logic);
+	end component FA;
+	
+Signal C : std_logic_vector (15 downto 1);
+Signal S : std_logic_vector (9 downto 1) ;
+
+Begin 
+	

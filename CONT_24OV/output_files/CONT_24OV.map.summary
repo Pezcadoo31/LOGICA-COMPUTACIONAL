@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Wed Feb 28 12:10:14 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : CONT_24OV
+Top-level Entity Name : CONT_24OV
+Family : MAX 10
+Total logic elements : 23
+    Total combinational functions : 23
+    Dedicated logic registers : 17
+Total registers : 17
+Total pins : 4
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

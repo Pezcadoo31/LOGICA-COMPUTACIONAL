@@ -1,0 +1,173 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "HSYNC",
+					"strict" : false
+				},
+				{
+					"name" : "R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R[3]",
+					"strict" : false
+				},
+				{
+					"name" : "G[0]",
+					"strict" : false
+				},
+				{
+					"name" : "G[1]",
+					"strict" : false
+				},
+				{
+					"name" : "G[2]",
+					"strict" : false
+				},
+				{
+					"name" : "G[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VSYNCST[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VSYNCST[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_525[9]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_525[5]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_525[6]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_525[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_525[8]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_800[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_800[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_800[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_800[1]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_800[5]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_800[6]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_800[4]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_800[9]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_800[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CONT_800[8]",
+					"strict" : false
+				},
+				{
+					"name" : "inR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "inR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "inB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "inB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Start",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

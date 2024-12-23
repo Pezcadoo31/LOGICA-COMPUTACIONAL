@@ -1,0 +1,287 @@
+|SEMAFORO
+horario[0] => MUX_SEM:I1.horario[0]
+horario[1] => MUX_SEM:I1.horario[1]
+noct => MA_EST:I2.noct
+rst => CONT_5BITS:I0.RST
+rst => MA_EST:I2.rst
+clk => CONT_5BITS:I0.CLK
+clk => MA_EST:I2.clk
+start => MA_EST:I2.start
+EO[0] <= MA_EST:I2.EO[0]
+EO[1] <= MA_EST:I2.EO[1]
+EO[2] <= MA_EST:I2.EO[2]
+EO[3] <= MA_EST:I2.EO[3]
+OE[0] <= MA_EST:I2.OE[0]
+OE[1] <= MA_EST:I2.OE[1]
+OE[2] <= MA_EST:I2.OE[2]
+OE[3] <= MA_EST:I2.OE[3]
+NS[0] <= MA_EST:I2.NS[0]
+NS[1] <= MA_EST:I2.NS[1]
+NS[2] <= MA_EST:I2.NS[2]
+SN[0] <= MA_EST:I2.SN[0]
+SN[1] <= MA_EST:I2.SN[1]
+SN[2] <= MA_EST:I2.SN[2]
+estado[0] <= MA_EST:I2.est[0]
+estado[1] <= MA_EST:I2.est[1]
+estado[2] <= MA_EST:I2.est[2]
+
+
+|SEMAFORO|CONT_5BITS:I0
+CLK => Q[0].CLK
+CLK => Q[1].CLK
+CLK => Q[2].CLK
+CLK => Q[3].CLK
+CLK => Q[4].CLK
+RST => Q[0].ACLR
+RST => Q[1].ACLR
+RST => Q[2].ACLR
+RST => Q[3].ACLR
+RST => Q[4].ACLR
+ENA => Q[0].ENA
+ENA => Q[1].ENA
+ENA => Q[2].ENA
+ENA => Q[3].ENA
+ENA => Q[4].ENA
+CNTA[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+CNTA[1] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+CNTA[2] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+CNTA[3] <= Q[3].DB_MAX_OUTPUT_PORT_TYPE
+CNTA[4] <= Q[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO|CONT_5BITS:I0|MAS1:I0
+A[0] => HA:I0.a
+A[1] => HA:I1.a
+A[2] => HA:I2.a
+A[3] => HA:I3.a
+A[4] => Z.IN1
+Z[0] <= HA:I0.s
+Z[1] <= HA:I1.s
+Z[2] <= HA:I2.s
+Z[3] <= HA:I3.s
+Z[4] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO|CONT_5BITS:I0|MAS1:I0|ha:I0
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO|CONT_5BITS:I0|MAS1:I0|ha:I1
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO|CONT_5BITS:I0|MAS1:I0|ha:I2
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO|CONT_5BITS:I0|MAS1:I0|ha:I3
+a => s.IN0
+a => Cout.IN0
+b => s.IN1
+b => Cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO|MUX_SEM:I1
+horario[0] => Mux0.IN5
+horario[0] => Mux1.IN5
+horario[0] => Mux2.IN5
+horario[0] => Mux3.IN5
+horario[0] => Mux4.IN5
+horario[0] => Mux5.IN5
+horario[0] => Mux6.IN5
+horario[0] => Mux7.IN5
+horario[0] => Mux8.IN5
+horario[0] => Mux9.IN5
+horario[0] => Mux10.IN5
+horario[0] => Mux11.IN5
+horario[0] => Mux12.IN5
+horario[0] => Mux13.IN5
+horario[0] => Mux14.IN5
+horario[0] => Mux15.IN5
+horario[0] => Mux16.IN5
+horario[0] => Mux17.IN5
+horario[0] => Mux18.IN5
+horario[0] => Mux19.IN5
+horario[0] => Mux20.IN5
+horario[0] => Mux21.IN5
+horario[0] => Mux22.IN5
+horario[0] => Mux23.IN5
+horario[0] => Mux24.IN5
+horario[1] => Mux0.IN4
+horario[1] => Mux1.IN4
+horario[1] => Mux2.IN4
+horario[1] => Mux3.IN4
+horario[1] => Mux4.IN4
+horario[1] => Mux5.IN4
+horario[1] => Mux6.IN4
+horario[1] => Mux7.IN4
+horario[1] => Mux8.IN4
+horario[1] => Mux9.IN4
+horario[1] => Mux10.IN4
+horario[1] => Mux11.IN4
+horario[1] => Mux12.IN4
+horario[1] => Mux13.IN4
+horario[1] => Mux14.IN4
+horario[1] => Mux15.IN4
+horario[1] => Mux16.IN4
+horario[1] => Mux17.IN4
+horario[1] => Mux18.IN4
+horario[1] => Mux19.IN4
+horario[1] => Mux20.IN4
+horario[1] => Mux21.IN4
+horario[1] => Mux22.IN4
+horario[1] => Mux23.IN4
+horario[1] => Mux24.IN4
+T1[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+T1[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+T1[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+T1[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+T1[4] <= <GND>
+T2[0] <= <GND>
+T2[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+T2[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+T2[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+T2[4] <= <GND>
+T3[0] <= <GND>
+T3[1] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+T3[2] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+T3[3] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+T3[4] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+T4[0] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+T4[1] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+T4[2] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+T4[3] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+T4[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+T5[0] <= Mux19.DB_MAX_OUTPUT_PORT_TYPE
+T5[1] <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
+T5[2] <= <GND>
+T5[3] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
+T5[4] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+T6[0] <= Mux24.DB_MAX_OUTPUT_PORT_TYPE
+T6[1] <= Mux23.DB_MAX_OUTPUT_PORT_TYPE
+T6[2] <= Mux22.DB_MAX_OUTPUT_PORT_TYPE
+T6[3] <= Mux21.DB_MAX_OUTPUT_PORT_TYPE
+T6[4] <= Mux20.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SEMAFORO|MA_EST:I2
+clk => Noche.CLK
+clk => edo~1.DATAIN
+rst => edo~3.DATAIN
+rst => Noche.ENA
+start => Selector1.IN3
+start => Selector0.IN1
+noct => est[2]$latch.LATCH_ENABLE
+noct => est[1]$latch.LATCH_ENABLE
+noct => est[0]$latch.LATCH_ENABLE
+noct => Noche.OUTPUTSELECT
+noct => EO.OUTPUTSELECT
+noct => EO.OUTPUTSELECT
+noct => EO.OUTPUTSELECT
+noct => EO.OUTPUTSELECT
+noct => OE.OUTPUTSELECT
+noct => OE.OUTPUTSELECT
+noct => OE.OUTPUTSELECT
+noct => OE.OUTPUTSELECT
+noct => NS.OUTPUTSELECT
+noct => NS.OUTPUTSELECT
+noct => NS.OUTPUTSELECT
+noct => SN.OUTPUTSELECT
+noct => SN.OUTPUTSELECT
+noct => SN.OUTPUTSELECT
+T1[0] => Equal0.IN4
+T1[1] => Equal0.IN3
+T1[2] => Equal0.IN2
+T1[3] => Equal0.IN1
+T1[4] => Equal0.IN0
+T2[0] => Equal1.IN4
+T2[1] => Equal1.IN3
+T2[2] => Equal1.IN2
+T2[3] => Equal1.IN1
+T2[4] => Equal1.IN0
+T3[0] => Equal2.IN4
+T3[1] => Equal2.IN3
+T3[2] => Equal2.IN2
+T3[3] => Equal2.IN1
+T3[4] => Equal2.IN0
+T4[0] => Equal3.IN4
+T4[1] => Equal3.IN3
+T4[2] => Equal3.IN2
+T4[3] => Equal3.IN1
+T4[4] => Equal3.IN0
+T5[0] => Equal4.IN4
+T5[1] => Equal4.IN3
+T5[2] => Equal4.IN2
+T5[3] => Equal4.IN1
+T5[4] => Equal4.IN0
+T6[0] => Equal5.IN4
+T6[1] => Equal5.IN3
+T6[2] => Equal5.IN2
+T6[3] => Equal5.IN1
+T6[4] => Equal5.IN0
+cnt[0] => Equal0.IN9
+cnt[0] => Equal1.IN9
+cnt[0] => Equal2.IN9
+cnt[0] => Equal3.IN9
+cnt[0] => Equal4.IN9
+cnt[0] => Equal5.IN9
+cnt[1] => Equal0.IN8
+cnt[1] => Equal1.IN8
+cnt[1] => Equal2.IN8
+cnt[1] => Equal3.IN8
+cnt[1] => Equal4.IN8
+cnt[1] => Equal5.IN8
+cnt[2] => Equal0.IN7
+cnt[2] => Equal1.IN7
+cnt[2] => Equal2.IN7
+cnt[2] => Equal3.IN7
+cnt[2] => Equal4.IN7
+cnt[2] => Equal5.IN7
+cnt[3] => Equal0.IN6
+cnt[3] => Equal1.IN6
+cnt[3] => Equal2.IN6
+cnt[3] => Equal3.IN6
+cnt[3] => Equal4.IN6
+cnt[3] => Equal5.IN6
+cnt[4] => Equal0.IN5
+cnt[4] => Equal1.IN5
+cnt[4] => Equal2.IN5
+cnt[4] => Equal3.IN5
+cnt[4] => Equal4.IN5
+cnt[4] => Equal5.IN5
+EO[0] <= EO.DB_MAX_OUTPUT_PORT_TYPE
+EO[1] <= EO.DB_MAX_OUTPUT_PORT_TYPE
+EO[2] <= EO.DB_MAX_OUTPUT_PORT_TYPE
+EO[3] <= EO.DB_MAX_OUTPUT_PORT_TYPE
+OE[0] <= OE.DB_MAX_OUTPUT_PORT_TYPE
+OE[1] <= OE.DB_MAX_OUTPUT_PORT_TYPE
+OE[2] <= OE.DB_MAX_OUTPUT_PORT_TYPE
+OE[3] <= OE.DB_MAX_OUTPUT_PORT_TYPE
+NS[0] <= NS.DB_MAX_OUTPUT_PORT_TYPE
+NS[1] <= NS.DB_MAX_OUTPUT_PORT_TYPE
+NS[2] <= NS.DB_MAX_OUTPUT_PORT_TYPE
+SN[0] <= SN.DB_MAX_OUTPUT_PORT_TYPE
+SN[1] <= SN.DB_MAX_OUTPUT_PORT_TYPE
+SN[2] <= SN.DB_MAX_OUTPUT_PORT_TYPE
+est[0] <= est[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+est[1] <= est[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+est[2] <= est[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

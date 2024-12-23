@@ -1,0 +1,161 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+entity ME is
+port (clk,rst,start,noct: IN std_logic;
+		T1,T2,T3,T4,T5,T6: IN std_logic_vector(4 downto 0);
+		cnt: IN std_logic_vector(4 downto 0);
+		EO,OE: OUT std_logic_vector(3 downto 0);
+		NS,SN: OUT std_logic_vector(2 downto 0);
+		est  : OUT std_logic_vector(2 downto 0));
+end entity;
+
+architecture arc of ME is
+
+type ESTADOS is (s0,s1,s2,s3,s4,s5,s6);
+signal edo,edof: ESTADOS;
+
+begin
+
+p1: process (clk,rst)
+	begin
+	if rst ='0' then
+		edo <=s0;
+	elsif clk'event and clk ='1' then 
+		edo <= edof;
+	end if;
+end process;
+
+p2: process (edo,cnt,start,T1,T2,T3,T4,T5,T6)
+	begin
+	case edo is
+		when s0 => if start = '1' then 
+							edof <= s1;
+						else
+							edof <= s0;
+					  end if;
+		when s1 => if cnt = T1 then 
+							edof <= s2;
+						else
+							edof <= s1;
+					  end if;
+		when s2 => if cnt = T2 then 
+							edof <= s3;
+						else
+							edof <= s2;
+					  end if;
+		when s3 => if cnt = T3 then 
+							edof <= s4;
+						else
+							edof <= s3;
+					  end if;
+		when s4 => if cnt = T4 then 
+							edof <= s5;
+						else
+							edof <= s4;
+					  end if;
+		when s5 => if cnt = T5 then 
+							edof <= s6;
+						else
+							edof <= s5;
+					  end if;
+		when s6 => if cnt = T6 then 
+							edof <= s0;
+						else
+							edof <= s6;
+					  end if;
+		when others => null;
+	end case;
+end process;
+
+P3: process (edo,noct) 
+begin 
+case edo is 
+	when s0 => if noct  ='0' then 
+						EO <="0000";
+						OE <="0000";
+						NS <="000";
+						SN <="000";
+					else 
+						EO <="0000";
+						OE <="0000";
+						NS <="000";
+						SN <="000";
+					end if;
+					est <= "000";
+	when s1 => if noct  ='0' then 
+						EO <="1000";
+						OE <="1000";
+						NS <="001";
+						SN <="001";
+					else 
+						EO <="0100";
+						OE <="0100";
+						NS <="010";
+						SN <="010";
+					end if;
+					est <= "001";
+	when s2 => if noct  ='0' then 
+						EO <="0100";
+						OE <="0100";
+						NS <="001";
+						SN <="001";
+					else 
+						EO <="0000";
+						OE <="0000";
+						NS <="000";
+						SN <="000";
+					end if;
+					est <= "010";
+	when s3 => if noct  ='0' then 
+						EO <="0001";
+						OE <="0010";
+						NS <="001";
+						SN <="001";
+					else 
+						EO <="0100";
+						OE <="0100";
+						NS <="010";
+						SN <="010";
+					end if;
+					est <= "011";
+	when s4 => if noct  ='0' then 
+						EO <="0010";
+						OE <="0010";
+						NS <="100";
+						SN <="100";
+					else 
+						EO <="0000";
+						OE <="0000";
+						NS <="000";
+						SN <="000";
+					end if;
+					est <= "100";
+	when s5 => if noct  ='0' then 
+						EO<="0010";
+						OE <="0010";
+						NS <="010";
+						SN <="010";
+					else 
+						EO <="0100";
+						OE <="0100";
+						NS <="010";
+						SN <="010";
+					end if;
+					est <= "101";
+	when s6 => if noct  ='0' then 
+						EO <="0010";
+						OE <="0001";
+						NS <="001";
+						SN <="001";
+					else 
+						EO <="0000";
+						OE <="0000";
+						NS <="000";
+						SN <="000";
+					end if;
+					est <= "110";
+	when others => null;
+	end case;
+end process;
+end architecture;

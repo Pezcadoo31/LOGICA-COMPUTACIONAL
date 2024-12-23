@@ -1,0 +1,540 @@
+$comment
+	File created using the following command:
+		vcd file V_SYNC_VGA.msim.vcd -direction
+$end
+$date
+	Fri Mar 08 09:21:37 2024
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module v_sync_vga_vhd_vec_tst $end
+$var wire 1 ! clk $end
+$var wire 1 " CONT_525 [9] $end
+$var wire 1 # CONT_525 [8] $end
+$var wire 1 $ CONT_525 [7] $end
+$var wire 1 % CONT_525 [6] $end
+$var wire 1 & CONT_525 [5] $end
+$var wire 1 ' CONT_525 [4] $end
+$var wire 1 ( CONT_525 [3] $end
+$var wire 1 ) CONT_525 [2] $end
+$var wire 1 * CONT_525 [1] $end
+$var wire 1 + CONT_525 [0] $end
+$var wire 1 , rst $end
+$var wire 1 - Start $end
+$var wire 1 . VSYNC $end
+$var wire 1 / VSYNCST [1] $end
+$var wire 1 0 VSYNCST [0] $end
+
+$scope module i1 $end
+$var wire 1 1 gnd $end
+$var wire 1 2 vcc $end
+$var wire 1 3 unknown $end
+$var wire 1 4 devoe $end
+$var wire 1 5 devclrn $end
+$var wire 1 6 devpor $end
+$var wire 1 7 ww_devoe $end
+$var wire 1 8 ww_devclrn $end
+$var wire 1 9 ww_devpor $end
+$var wire 1 : ww_Start $end
+$var wire 1 ; ww_clk $end
+$var wire 1 < ww_rst $end
+$var wire 1 = ww_CONT_525 [9] $end
+$var wire 1 > ww_CONT_525 [8] $end
+$var wire 1 ? ww_CONT_525 [7] $end
+$var wire 1 @ ww_CONT_525 [6] $end
+$var wire 1 A ww_CONT_525 [5] $end
+$var wire 1 B ww_CONT_525 [4] $end
+$var wire 1 C ww_CONT_525 [3] $end
+$var wire 1 D ww_CONT_525 [2] $end
+$var wire 1 E ww_CONT_525 [1] $end
+$var wire 1 F ww_CONT_525 [0] $end
+$var wire 1 G ww_VSYNCST [1] $end
+$var wire 1 H ww_VSYNCST [0] $end
+$var wire 1 I ww_VSYNC $end
+$var wire 1 J \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [4] $end
+$var wire 1 K \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [3] $end
+$var wire 1 L \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [2] $end
+$var wire 1 M \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [1] $end
+$var wire 1 N \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [0] $end
+$var wire 1 O \EDO.IDLE~clkctrl_INCLK_bus\ [3] $end
+$var wire 1 P \EDO.IDLE~clkctrl_INCLK_bus\ [2] $end
+$var wire 1 Q \EDO.IDLE~clkctrl_INCLK_bus\ [1] $end
+$var wire 1 R \EDO.IDLE~clkctrl_INCLK_bus\ [0] $end
+$var wire 1 S \clk~inputclkctrl_INCLK_bus\ [3] $end
+$var wire 1 T \clk~inputclkctrl_INCLK_bus\ [2] $end
+$var wire 1 U \clk~inputclkctrl_INCLK_bus\ [1] $end
+$var wire 1 V \clk~inputclkctrl_INCLK_bus\ [0] $end
+$var wire 1 W \rst~inputclkctrl_INCLK_bus\ [3] $end
+$var wire 1 X \rst~inputclkctrl_INCLK_bus\ [2] $end
+$var wire 1 Y \rst~inputclkctrl_INCLK_bus\ [1] $end
+$var wire 1 Z \rst~inputclkctrl_INCLK_bus\ [0] $end
+$var wire 1 [ \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 \ \~QUARTUS_CREATED_UNVM~~busy\ $end
+$var wire 1 ] \~QUARTUS_CREATED_ADC1~~eoc\ $end
+$var wire 1 ^ \VSYNCST[0]~output_o\ $end
+$var wire 1 _ \VSYNCST[1]~output_o\ $end
+$var wire 1 ` \VSYNC~output_o\ $end
+$var wire 1 a \clk~input_o\ $end
+$var wire 1 b \clk~inputclkctrl_outclk\ $end
+$var wire 1 c \Start~input_o\ $end
+$var wire 1 d \CONT_525[0]~input_o\ $end
+$var wire 1 e \CONT_525[2]~input_o\ $end
+$var wire 1 f \CONT_525[5]~input_o\ $end
+$var wire 1 g \CONT_525[1]~input_o\ $end
+$var wire 1 h \Equal3~1_combout\ $end
+$var wire 1 i \CONT_525[4]~input_o\ $end
+$var wire 1 j \CONT_525[8]~input_o\ $end
+$var wire 1 k \CONT_525[7]~input_o\ $end
+$var wire 1 l \CONT_525[6]~input_o\ $end
+$var wire 1 m \Equal3~0_combout\ $end
+$var wire 1 n \CONT_525[9]~input_o\ $end
+$var wire 1 o \CONT_525[3]~input_o\ $end
+$var wire 1 p \Equal3~2_combout\ $end
+$var wire 1 q \Equal2~0_combout\ $end
+$var wire 1 r \Equal0~0_combout\ $end
+$var wire 1 s \Equal1~0_combout\ $end
+$var wire 1 t \Selector6~0_combout\ $end
+$var wire 1 u \Equal0~1_combout\ $end
+$var wire 1 v \Selector5~3_combout\ $end
+$var wire 1 w \Selector5~2_combout\ $end
+$var wire 1 x \EDO.PSY~feeder_combout\ $end
+$var wire 1 y \rst~input_o\ $end
+$var wire 1 z \rst~inputclkctrl_outclk\ $end
+$var wire 1 { \EDO.PSY~q\ $end
+$var wire 1 | \Selector6~1_combout\ $end
+$var wire 1 } \Selector6~2_combout\ $end
+$var wire 1 ~ \Selector6~3_combout\ $end
+$var wire 1 !! \EDO.BP~q\ $end
+$var wire 1 "! \EDO_F.ZV~0_combout\ $end
+$var wire 1 #! \EDO.ZV~q\ $end
+$var wire 1 $! \EDO_F.FP~0_combout\ $end
+$var wire 1 %! \EDO.FP~q\ $end
+$var wire 1 &! \Selector4~0_combout\ $end
+$var wire 1 '! \Selector4~1_combout\ $end
+$var wire 1 (! \EDO.IDLE~q\ $end
+$var wire 1 )! \EDO.IDLE~clkctrl_outclk\ $end
+$var wire 1 *! \VSYNCST~0_combout\ $end
+$var wire 1 +! \VSYNCST[0]$latch~combout\ $end
+$var wire 1 ,! \VSYNCST~1_combout\ $end
+$var wire 1 -! \VSYNCST[1]$latch~combout\ $end
+$var wire 1 .! \VSYNC$latch~combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1,
+1-
+x.
+01
+12
+x3
+14
+15
+16
+17
+18
+19
+1:
+1;
+1<
+xI
+0[
+z\
+z]
+x^
+x_
+x`
+1a
+1b
+1c
+1d
+0e
+1f
+1g
+0h
+0i
+0j
+1k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+1v
+1w
+1x
+1y
+1z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+1'!
+0(!
+0)!
+0*!
+x+!
+0,!
+x-!
+x.!
+0"
+0#
+1$
+0%
+1&
+0'
+0(
+0)
+1*
+1+
+0=
+0>
+1?
+0@
+1A
+0B
+0C
+0D
+1E
+1F
+xG
+xH
+1S
+1T
+1U
+1V
+1W
+1X
+1Y
+1Z
+1O
+1P
+1Q
+0R
+0J
+0K
+0L
+0M
+0N
+x/
+x0
+$end
+#50000
+1"
+0&
+1(
+0+
+0F
+1C
+0A
+1=
+1n
+0f
+1o
+0d
+1p
+1q
+#100000
+1#
+0$
+1)
+1D
+0?
+1>
+1j
+0k
+1e
+#150000
+0)
+1+
+0*
+1F
+0E
+0D
+0e
+0g
+1d
+#200000
+0#
+1$
+1?
+0>
+0j
+1k
+#250000
+0"
+1&
+0(
+1%
+1'
+0C
+1B
+1A
+1@
+0=
+0n
+1l
+1f
+1i
+0o
+0p
+0q
+#300000
+1"
+1(
+0%
+0'
+0$
+1)
+1*
+1E
+1D
+1C
+0B
+0@
+0?
+1=
+1n
+0k
+0l
+0i
+1o
+1e
+1g
+1m
+1p
+#350000
+0"
+1%
+1$
+0)
+0*
+0E
+0D
+1@
+1?
+0=
+0n
+1k
+1l
+0e
+0g
+0m
+0p
+#400000
+1)
+0&
+1#
+0+
+0F
+1D
+0A
+1>
+1j
+0f
+1e
+0d
+1h
+1u
+#450000
+0#
+1+
+0$
+0(
+1'
+1F
+0C
+1B
+0?
+0>
+0j
+0k
+1i
+0o
+1d
+0h
+#500000
+0+
+0)
+1&
+0F
+0D
+1A
+1f
+0e
+0d
+0u
+#550000
+1)
+0&
+1#
+0'
+0%
+1D
+0B
+0A
+0@
+1>
+1j
+0l
+0f
+0i
+1e
+1h
+1u
+#600000
+1%
+1*
+1E
+1@
+1l
+1g
+0h
+0u
+#650000
+0%
+0*
+0)
+1'
+1"
+0E
+0D
+1B
+0@
+1=
+1n
+0l
+1i
+0e
+0g
+1q
+#700000
+1%
+0"
+1$
+1(
+1C
+1@
+1?
+0=
+0n
+1k
+1l
+1o
+0q
+1u
+#750000
+0%
+0$
+0'
+1&
+0B
+1A
+0@
+0?
+0k
+0l
+1f
+0i
+0u
+#800000
+1%
+1'
+0&
+1"
+1)
+1D
+1B
+0A
+1@
+1=
+1n
+1l
+0f
+1i
+1e
+1h
+1p
+1q
+#850000
+0%
+0'
+0"
+0)
+0(
+0#
+1+
+1F
+0D
+0C
+0B
+0@
+0>
+0=
+0n
+0j
+0l
+0i
+0o
+0e
+1d
+0h
+1m
+0p
+0q
+1u
+1r
+0v
+#900000
+1%
+1#
+1$
+1*
+1E
+1@
+1?
+1>
+1j
+1k
+1l
+1g
+0u
+1v
+0m
+0r
+#950000
+0%
+0#
+1'
+1"
+1)
+1D
+1B
+0@
+0>
+1=
+1n
+0j
+0l
+1i
+1e
+1q
+#1000000
